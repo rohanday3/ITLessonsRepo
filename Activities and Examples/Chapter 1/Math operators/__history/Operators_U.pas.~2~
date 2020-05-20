@@ -1,0 +1,56 @@
+unit Operators_U;
+
+interface
+
+uses
+  Windows, Messages, SysUtils, Variants, Classes, Graphics, Controls, Forms,
+  Dialogs, StdCtrls, ComCtrls;
+
+type
+  TForm6 = class(TForm)
+    edtNumber: TEdit;
+    Button1: TButton;
+    redOutput: TRichEdit;
+    procedure Button1Click(Sender: TObject);
+  private
+    { Private declarations }
+  public
+    { Public declarations }
+  end;
+
+var
+  Form6: TForm6;
+
+implementation
+
+{$R *.dfm}
+
+procedure TForm6.Button1Click(Sender: TObject);
+var
+iNumber,iRoundUp, iRoundDown :integer;
+rValue  :real;
+iA:integer;
+rB:real;
+
+
+begin
+
+  rValue := StrToFloat(edtNumber.Text);
+  iNumber := StrToInt(edtNumber.Text);
+
+  redOutput.Lines.Add(FloatToStr(rValue));
+
+    iRoundUp :=abs(iNumber);
+    //redOutput.Lines.Add(intToStr(iRoundUp)) ;
+    iNumber := 18 div 6 ;
+    //redOutput.Lines.Add(intToStr(iNumber));
+    rValue := 12.899;
+    iA := trunc(rValue);
+    rB := frac(rValue);
+    redOutput.Lines.Add(intToStr(iA));
+    redOutput.Lines.Add(FloatToStr(rB));
+
+
+end;
+
+end.

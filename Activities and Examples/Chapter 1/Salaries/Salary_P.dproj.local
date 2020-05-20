@@ -1,0 +1,11 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<BorlandProject>
+	<Transactions>
+    <Transaction>2015/12/01 20:25:02.656.pas,C:\Users\pc6\Documents\RAD Studio\Projects\Unit6.pas=C:\Users\pc6\Documents\RAD Studio\Projects\Salary_U.pas</Transaction>
+    <Transaction>2015/12/01 20:25:02.656.dfm,C:\Users\pc6\Documents\RAD Studio\Projects\Unit6.dfm=C:\Users\pc6\Documents\RAD Studio\Projects\Salary_U.dfm</Transaction>
+    <Transaction>2015/12/01 20:25:06.614.dproj,C:\Users\pc6\Documents\RAD Studio\Projects\Project4.dproj=C:\Users\pc6\Documents\RAD Studio\Projects\Salary_P.dproj</Transaction>
+    <Transaction>2015/12/01 20:53:51.127.pas,C:\Users\pc6\Documents\RAD Studio\Projects\Salary_U.pas=C:\Users\pc6\Desktop\Delphi Projects\Book Projects\Chapter 1\Salaries\Salary_U.pas</Transaction>
+    <Transaction>2015/12/01 20:53:51.127.dfm,C:\Users\pc6\Documents\RAD Studio\Projects\Salary_U.dfm=C:\Users\pc6\Desktop\Delphi Projects\Book Projects\Chapter 1\Salaries\Salary_U.dfm</Transaction>
+    <Transaction>2015/12/01 20:54:10.498.dproj,C:\Users\pc6\Documents\RAD Studio\Projects\Salary_P.dproj=C:\Users\pc6\Desktop\Delphi Projects\Book Projects\Chapter 1\Salaries\Salary_P.dproj</Transaction>
+  </Transactions>
+</BorlandProject>

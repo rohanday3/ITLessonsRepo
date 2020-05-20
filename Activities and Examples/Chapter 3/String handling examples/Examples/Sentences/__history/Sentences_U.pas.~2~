@@ -1,0 +1,33 @@
+unit Sentences_U;
+
+interface
+
+uses
+  Windows, Messages, SysUtils, Variants, Classes, Graphics, Controls, Forms,
+  Dialogs, StdCtrls, ExtCtrls;
+
+type
+  TForm5 = class(TForm)
+    Panel1: TPanel;
+    btnRemove: TButton;
+    btnFirst5: TButton;
+    btnlast2: TButton;
+    Label1: TLabel;
+    edtSentence: TEdit;
+    Edit1: TEdit;
+    Edit2: TEdit;
+    Edit3: TEdit;
+  private
+    { Private declarations }
+  public
+    { Public declarations }
+  end;
+
+var
+  Form5: TForm5;
+
+implementation
+
+{$R *.dfm}
+
+end.

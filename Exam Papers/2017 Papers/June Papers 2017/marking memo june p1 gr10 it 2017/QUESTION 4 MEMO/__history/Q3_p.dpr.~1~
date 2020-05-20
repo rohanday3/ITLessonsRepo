@@ -1,0 +1,14 @@
+program Q3_p;
+
+uses
+  Forms,
+  Q3_u in 'Q3_u.pas' {Form1};
+
+{$R *.res}
+
+begin
+  Application.Initialize;
+  Application.MainFormOnTaskbar := True;
+  Application.CreateForm(TForm1, Form1);
+  Application.Run;
+end.

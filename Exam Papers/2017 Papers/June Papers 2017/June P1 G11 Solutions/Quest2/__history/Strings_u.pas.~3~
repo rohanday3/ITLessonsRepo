@@ -1,0 +1,83 @@
+unit Strings_u;
+
+interface
+
+uses
+  Windows, Messages, SysUtils, Variants, Classes, Graphics, Controls, Forms,
+  Dialogs, ComCtrls, Vcl.ExtCtrls, Vcl.StdCtrls;
+
+type
+  TForm1 = class(TForm)
+    pgc1: TPageControl;
+    ts1: TTabSheet;
+    ts2: TTabSheet;
+    redOutput: TRichEdit;
+    Button1: TButton;
+    Button2: TButton;
+    Button3: TButton;
+    pnlBudget: TPanel;
+    redDisplay: TRichEdit;
+    GroupBox1: TGroupBox;
+    edtFN: TEdit;
+    edtSN: TEdit;
+    Label1: TLabel;
+    Label2: TLabel;
+    edtID: TEdit;
+    Label3: TLabel;
+    cmbProv: TComboBox;
+    Label4: TLabel;
+    CheckBox1: TCheckBox;
+    Label5: TLabel;
+    Button4: TButton;
+    Button5: TButton;
+    Button6: TButton;
+    cmboProv: TComboBox;
+    procedure edtIDChange(Sender: TObject);
+    procedure Button4Click(Sender: TObject);
+  private
+    { Private declarations }
+  public
+    { Public declarations }
+  end;
+
+var
+  Form1: TForm1;
+  provCode:string;
+implementation
+
+{$R *.dfm}
+
+
+
+procedure TForm1.Button4Click(Sender: TObject);
+var
+prov :string;
+posSpc : integer;
+begin
+ prov:= cmbProv.text;
+ posSpc := pos('',prov);
+ if posSpc=-1 then
+ begin
+   provCode := UpperCase(copy(prov,1,3));
+ end
+ else
+ begin
+   provCode := uppercase(prov[1]+prov[posSpc+1]);
+ end;
+ redDisplay.Lines.Add(provCode);
+end;
+
+procedure TForm1.edtIDChange(Sender: TObject);
+var
+id :string;
+begin
+  id := edtID.Text;
+  while length(id)<> 13 do
+  begin
+    edtID.Clear;
+    id := InputBox('Data','Enter valid ID number','');
+  end;
+  edtID.Text:= id;
+end;
+
+end.

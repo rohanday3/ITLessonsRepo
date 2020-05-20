@@ -1,0 +1,10 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<BorlandProject>
+	<Transactions>
+    <Transaction>2016/01/04 06:40:37.835.pas,C:\Users\Georgina\Documents\RAD Studio\Projects\Unit5.pas=C:\Users\Georgina\Desktop\Delphi Projects\Database\First_U.pas</Transaction>
+    <Transaction>2016/01/04 06:40:37.835.dfm,C:\Users\Georgina\Documents\RAD Studio\Projects\Unit5.dfm=C:\Users\Georgina\Desktop\Delphi Projects\Database\First_U.dfm</Transaction>
+    <Transaction>2016/01/04 06:40:44.533.dproj,C:\Users\Georgina\Documents\RAD Studio\Projects\Project3.dproj=C:\Users\Georgina\Desktop\Delphi Projects\Database\First_P.dproj</Transaction>
+    <Transaction>2016/01/04 06:42:08.938.pas,C:\Users\Georgina\Desktop\Delphi Projects\Database\Unit1.pas=C:\Users\Georgina\Desktop\Delphi Projects\Database\DataModule_U.pas</Transaction>
+    <Transaction>2016/01/04 06:42:08.938.dfm,C:\Users\Georgina\Desktop\Delphi Projects\Database\Unit1.dfm=C:\Users\Georgina\Desktop\Delphi Projects\Database\DataModule_U.dfm</Transaction>
+  </Transactions>
+</BorlandProject>

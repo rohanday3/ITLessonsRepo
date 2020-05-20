@@ -1,0 +1,11 @@
+StudentID,Name,Surname,YearOfStudy
+1,Sipho,Modikaze,3
+2,Mark,Smith,2
+3,Gert,Smit,1
+4,Thandi,Mpofu,2
+5,John,Decan,1
+6,Dylan,Mullan,3
+7,Michelle,Botha,4
+8,Kabelo,Mkosi,1
+9,Sean,McCullan,2
+10,Princess,Kweto,3

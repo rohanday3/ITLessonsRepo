@@ -1,0 +1,48 @@
+unit ReadEmployee_U;
+
+interface
+
+uses
+  Windows, Messages, SysUtils, Variants, Classes, Graphics, Controls, Forms,
+  Dialogs, StdCtrls, ExtCtrls;
+
+type
+  TForm5 = class(TForm)
+    Panel1: TPanel;
+    btnEmployees: TButton;
+    lstEmployees: TListBox;
+    procedure btnEmployeesClick(Sender: TObject);
+  private
+    { Private declarations }
+  public
+    { Public declarations }
+  end;
+
+var
+  Form5: TForm5;
+
+implementation
+
+{$R *.dfm}
+
+procedure TForm5.btnEmployeesClick(Sender: TObject);
+Var
+fEmployeeFile : Textfile;
+sLine,sName,sYearsOfService:string;
+rSalaryNotch,rHighestSalary,rTotal,rAverageSalary:real;
+begin
+if Fileexists('employee.txt') then
+begin
+
+end
+else
+begin
+MessageDlg('Employee file does not exist',)
+  end;
+end;
+
+
+
+end;
+
+end.

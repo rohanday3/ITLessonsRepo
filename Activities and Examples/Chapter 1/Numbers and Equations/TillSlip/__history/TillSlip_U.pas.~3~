@@ -1,0 +1,40 @@
+unit TillSlip_U;
+
+interface
+
+uses
+  Windows, Messages, SysUtils, Variants, Classes, Graphics, Controls, Forms,
+  Dialogs, StdCtrls;
+
+type
+  TForm6 = class(TForm)
+    edtPrice1: TEdit;
+    edtPrice2: TEdit;
+    edtPrice3: TEdit;
+    Label1: TLabel;
+    Label2: TLabel;
+    Label3: TLabel;
+    edtTotal: TEdit;
+    edtVat: TEdit;
+    edtFinalTotal: TEdit;
+    Button1: TButton;
+    Button2: TButton;
+    Button3: TButton;
+    edtAmount: TEdit;
+    Label4: TLabel;
+    Button4: TButton;
+    edtChange: TEdit;
+  private
+    { Private declarations }
+  public
+    { Public declarations }
+  end;
+
+var
+  Form6: TForm6;
+
+implementation
+
+{$R *.dfm}
+
+end.

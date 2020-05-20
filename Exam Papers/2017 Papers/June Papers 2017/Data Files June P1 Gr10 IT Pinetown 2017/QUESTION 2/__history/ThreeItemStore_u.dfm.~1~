@@ -1,0 +1,166 @@
+object Form2: TForm2
+  Left = 0
+  Top = 0
+  Caption = 'Form2'
+  ClientHeight = 536
+  ClientWidth = 778
+  Color = clRed
+  Font.Charset = DEFAULT_CHARSET
+  Font.Color = clWindowText
+  Font.Height = -11
+  Font.Name = 'Tahoma'
+  Font.Style = []
+  OldCreateOrder = False
+  PixelsPerInch = 96
+  TextHeight = 13
+  object Label1: TLabel
+    Left = 32
+    Top = 27
+    Width = 49
+    Height = 13
+    Caption = 'Enter item'
+  end
+  object Label2: TLabel
+    Left = 32
+    Top = 64
+    Width = 52
+    Height = 13
+    Caption = 'Enter price'
+  end
+  object Label3: TLabel
+    Left = 32
+    Top = 109
+    Width = 69
+    Height = 13
+    Caption = 'Enter quantity'
+  end
+  object Label4: TLabel
+    Left = 32
+    Top = 178
+    Width = 49
+    Height = 13
+    Caption = 'Enter item'
+  end
+  object Label5: TLabel
+    Left = 32
+    Top = 211
+    Width = 52
+    Height = 13
+    Caption = 'Enter price'
+  end
+  object Label6: TLabel
+    Left = 32
+    Top = 248
+    Width = 65
+    Height = 13
+    Caption = 'Enter quanity'
+  end
+  object Label7: TLabel
+    Left = 32
+    Top = 328
+    Width = 49
+    Height = 13
+    Caption = 'Enter item'
+  end
+  object Label8: TLabel
+    Left = 32
+    Top = 376
+    Width = 52
+    Height = 13
+    Caption = 'Enter price'
+  end
+  object Label9: TLabel
+    Left = 32
+    Top = 424
+    Width = 69
+    Height = 13
+    Caption = 'Enter quantity'
+  end
+  object edtItem: TEdit
+    Left = 184
+    Top = 24
+    Width = 121
+    Height = 21
+    TabOrder = 0
+  end
+  object edtP1: TEdit
+    Left = 184
+    Top = 61
+    Width = 121
+    Height = 21
+    TabOrder = 1
+  end
+  object edtQ1: TEdit
+    Left = 184
+    Top = 101
+    Width = 121
+    Height = 21
+    TabOrder = 2
+  end
+  object edtItem2: TEdit
+    Left = 184
+    Top = 170
+    Width = 121
+    Height = 21
+    TabOrder = 3
+  end
+  object edtP2: TEdit
+    Left = 184
+    Top = 208
+    Width = 121
+    Height = 21
+    TabOrder = 4
+  end
+  object edtQ2: TEdit
+    Left = 184
+    Top = 245
+    Width = 121
+    Height = 21
+    TabOrder = 5
+  end
+  object edtItem3: TEdit
+    Left = 184
+    Top = 325
+    Width = 121
+    Height = 21
+    TabOrder = 6
+  end
+  object edtP3: TEdit
+    Left = 184
+    Top = 368
+    Width = 121
+    Height = 21
+    TabOrder = 7
+  end
+  object edtQ3: TEdit
+    Left = 184
+    Top = 416
+    Width = 121
+    Height = 21
+    TabOrder = 8
+  end
+  object btnCalculate: TButton
+    Left = 368
+    Top = 296
+    Width = 353
+    Height = 25
+    Caption = 'CALCUATE'
+    TabOrder = 9
+  end
+  object redtOut: TRichEdit
+    Left = 368
+    Top = 27
+    Width = 353
+    Height = 214
+    Font.Charset = ANSI_CHARSET
+    Font.Color = clWindowText
+    Font.Height = -11
+    Font.Name = 'Tahoma'
+    Font.Style = []
+    Lines.Strings = (
+      '')
+    ParentFont = False
+    TabOrder = 10
+    Zoom = 100
+  end
+end

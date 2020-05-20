@@ -1,0 +1,124 @@
+object Form1: TForm1
+  Left = 510
+  Top = 151
+  Caption = 'Question3 - Memorandum'
+  ClientHeight = 545
+  ClientWidth = 745
+  Color = clBtnFace
+  Font.Charset = DEFAULT_CHARSET
+  Font.Color = clWindowText
+  Font.Height = -11
+  Font.Name = 'Tahoma'
+  Font.Style = []
+  OldCreateOrder = False
+  PixelsPerInch = 96
+  TextHeight = 13
+  object GroupBox1: TGroupBox
+    Left = 26
+    Top = 23
+    Width = 711
+    Height = 159
+    Caption = 'Agent'#39's sales details'
+    Color = clBtnFace
+    Ctl3D = False
+    Font.Charset = DEFAULT_CHARSET
+    Font.Color = clWindowText
+    Font.Height = -13
+    Font.Name = 'Tahoma'
+    Font.Style = []
+    ParentColor = False
+    ParentCtl3D = False
+    ParentFont = False
+    TabOrder = 0
+    object lblAgentName: TLabel
+      Left = 24
+      Top = 128
+      Width = 198
+      Height = 16
+      Caption = 'Display the agent'#39's name here'
+      Font.Charset = DEFAULT_CHARSET
+      Font.Color = clWindowText
+      Font.Height = -13
+      Font.Name = 'Tahoma'
+      Font.Style = [fsBold]
+      ParentFont = False
+    end
+    object Label2: TLabel
+      Left = 27
+      Top = 24
+      Width = 106
+      Height = 16
+      Caption = 'Enter agent'#39's code'
+    end
+    object edtCode: TEdit
+      Left = 24
+      Top = 66
+      Width = 161
+      Height = 22
+      TabOrder = 0
+      Text = 'A123'
+    end
+    object btnSearch: TButton
+      Left = 293
+      Top = 32
+      Width = 177
+      Height = 41
+      Caption = 'Search for agent'#39's name'
+      TabOrder = 1
+      OnClick = btnSearchClick
+    end
+    object btnSales: TButton
+      Left = 294
+      Top = 95
+      Width = 177
+      Height = 49
+      Caption = 'Agent'#39's sales record'
+      TabOrder = 2
+      OnClick = btnSalesClick
+    end
+  end
+  object GroupBox2: TGroupBox
+    Left = 27
+    Top = 195
+    Width = 705
+    Height = 318
+    Caption = 'Display area'
+    Ctl3D = False
+    Font.Charset = DEFAULT_CHARSET
+    Font.Color = clWindowText
+    Font.Height = -13
+    Font.Name = 'Tahoma'
+    Font.Style = []
+    ParentCtl3D = False
+    ParentFont = False
+    TabOrder = 1
+    object lblAgentSales: TLabel
+      Left = 5
+      Top = 286
+      Width = 178
+      Height = 16
+      Caption = 'Display the total sales here'
+      Font.Charset = DEFAULT_CHARSET
+      Font.Color = clWindowText
+      Font.Height = -13
+      Font.Name = 'Tahoma'
+      Font.Style = [fsBold]
+      ParentFont = False
+    end
+    object redQ3: TRichEdit
+      Left = 3
+      Top = 36
+      Width = 695
+      Height = 231
+      Font.Charset = ANSI_CHARSET
+      Font.Color = clWindowText
+      Font.Height = -11
+      Font.Name = 'Tahoma'
+      Font.Style = []
+      Lines.Strings = (
+        '')
+      ParentFont = False
+      TabOrder = 0
+    end
+  end
+end

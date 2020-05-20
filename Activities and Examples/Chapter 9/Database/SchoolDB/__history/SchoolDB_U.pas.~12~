@@ -1,0 +1,148 @@
+unit SchoolDB_U;
+
+interface
+
+uses
+  SchoolDataModule,Windows, Messages, SysUtils, Variants, Classes, Graphics, Controls, Forms,
+  Dialogs, StdCtrls, ExtCtrls, DBCtrls, Grids, DBGrids, DateUtils, ComCtrls,
+  Buttons, Mask;
+
+type
+  TfrmSchoolDB = class(TForm)
+    Button1: TButton;
+    Button2: TButton;
+    Button3: TButton;
+    Button4: TButton;
+    GroupBox1: TGroupBox;
+    DBGrid1: TDBGrid;
+    GroupBox2: TGroupBox;
+    btnAdd: TButton;
+    btnDelete: TButton;
+    btnUpdate: TButton;
+    btnClear: TButton;
+    Label1: TLabel;
+    Label2: TLabel;
+    Label3: TLabel;
+    Label4: TLabel;
+    SpeedButton1: TSpeedButton;
+    dbedtSurname: TDBEdit;
+    dbedtDOB: TDBEdit;
+    dbedtName: TDBEdit;
+    dbedtGender: TDBEdit;
+    procedure Button1Click(Sender: TObject);
+    procedure Button2Click(Sender: TObject);
+    procedure Button4Click(Sender: TObject);
+    procedure Button3Click(Sender: TObject);
+    procedure btnAddClick(Sender: TObject);
+    procedure btnDeleteClick(Sender: TObject);
+    procedure btnClearClick(Sender: TObject);
+    procedure dbedtSurnameChange(Sender: TObject);
+
+
+
+  private
+    { Private declarations }
+  public
+    { Public declarations }
+  end;
+
+var
+  frmSchoolDB: TfrmSchoolDB;
+
+implementation
+
+{$R *.dfm}
+
+procedure TfrmSchoolDB.Button1Click(Sender: TObject);
+begin
+DataModule1.SchoolTable1.First;
+end;
+
+procedure TfrmSchoolDB.Button2Click(Sender: TObject);
+begin
+DataModule1.SchoolTable1.Prior;
+end;
+
+procedure TfrmSchoolDB.Button3Click(Sender: TObject);
+begin
+DataModule1.SchoolTable1.Last;
+end;
+
+procedure TfrmSchoolDB.Button4Click(Sender: TObject);
+begin
+DataModule1.SchoolTable1.Next;
+end;
+
+
+
+
+procedure TfrmSchoolDB.dbedtSurnameChange(Sender: TObject);
+begin
+
+end;
+
+{procedure TfrmSchoolDB.DBGrid1MouseActivate(Sender: TObject;
+  Button: TMouseButton; Shift: TShiftState; X, Y, HitTest: Integer;
+  var MouseActivate: TMouseActivate);
+
+Var
+i,Row,iRowNumber:integer;
+begin // DataModule1.SchoolTable1.First;
+  iRowNumber := DBGrid1.DataSource.DataSet.RecNo;
+  row := 0;
+  while not DataModule1.SchoolTable1.Eof do
+     begin
+     RichEdit1.Lines.Add(intToStr(row)+'**'+ intToStr(iRowNumber));
+     if row = iRowNumber then
+        begin
+          edtName.Text := DataModule1.SchoolTable1['Firstname'];
+        end;
+     DataModule1.SchoolTable1.Next;
+     Inc(row);
+     end;
+
+end; }
+
+procedure TfrmSchoolDB.btnAddClick(Sender: TObject);
+Var
+iAdminNumber:integer;
+sName,sSurname,sGender,sDateOfBirth:string;
+begin
+ DataModule1.SchoolTable1.Last;
+ iAdminNumber := DataModule1.SchoolTable1.FieldByName('AdminNumber').AsInteger;
+ inc(iAdminNumber);
+
+ sName        := dbedtName.Text;
+ sSurname     := dbedtSurname.Text;
+ sGender      := dbedtGender.Text;
+ sDateOfBirth := dbedtDOB.Text;
+
+ DataModule1.SchoolTable1.Insert;
+      DataModule1.SchoolTable1['AdminNumber'] := iAdminNumber;
+      DataModule1.SchoolTable1['FirstName'] := sName;
+      DataModule1.SchoolTable1['Surname'] := sSurname;
+      DataModule1.SchoolTable1['Gender'] := sGender;
+      DataModule1.SchoolTable1['DateOfBirth'] := sDateOfBirth;
+      DataModule1.SchoolTable1.Post;
+ DataModule1.SchoolTable1.Refresh;
+end;
+
+procedure TfrmSchoolDB.btnClearClick(Sender: TObject);
+begin
+   dbedtName.Text :='';
+   dbedtSurname.Text :='';
+   dbedtGender.Text :='';
+   dbedtDOB.Text :='';
+
+end;
+
+procedure TfrmSchoolDB.btnDeleteClick(Sender: TObject);
+Var
+iRowNumber:integer;
+begin
+  iRowNumber := DBGrid1.DataSource.DataSet.RecNo;
+  DataModule1.SchoolTable1.Delete;
+  DataModule1.SchoolTable1.Refresh;
+end;
+
+end.

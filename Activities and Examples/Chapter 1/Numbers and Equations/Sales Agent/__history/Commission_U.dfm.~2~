@@ -1,0 +1,66 @@
+object Form6: TForm6
+  Left = 0
+  Top = 0
+  Caption = 'Form6'
+  ClientHeight = 246
+  ClientWidth = 503
+  Color = clBtnFace
+  Font.Charset = DEFAULT_CHARSET
+  Font.Color = clWindowText
+  Font.Height = -11
+  Font.Name = 'Tahoma'
+  Font.Style = []
+  OldCreateOrder = False
+  PixelsPerInch = 96
+  TextHeight = 13
+  object Label1: TLabel
+    Left = 56
+    Top = 32
+    Width = 58
+    Height = 13
+    Caption = 'Agent name'
+  end
+  object Label2: TLabel
+    Left = 56
+    Top = 75
+    Width = 25
+    Height = 13
+    Caption = 'Sales'
+  end
+  object Label3: TLabel
+    Left = 56
+    Top = 133
+    Width = 55
+    Height = 13
+    Caption = 'Commission'
+  end
+  object edtAgentName: TEdit
+    Left = 136
+    Top = 32
+    Width = 121
+    Height = 21
+    TabOrder = 0
+  end
+  object edtSales: TEdit
+    Left = 136
+    Top = 72
+    Width = 121
+    Height = 21
+    TabOrder = 1
+  end
+  object edtCommission: TEdit
+    Left = 136
+    Top = 130
+    Width = 121
+    Height = 21
+    TabOrder = 2
+  end
+  object btnCommission: TButton
+    Left = 136
+    Top = 99
+    Width = 121
+    Height = 25
+    Caption = 'Calculate Commission'
+    TabOrder = 3
+  end
+end

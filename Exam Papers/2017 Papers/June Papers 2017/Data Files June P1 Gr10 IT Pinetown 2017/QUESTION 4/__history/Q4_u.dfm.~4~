@@ -1,0 +1,242 @@
+object Form1: TForm1
+  Left = 0
+  Top = 0
+  Caption = 'QUESTION 4...APPLICATION FOR DAY VISIT TO UKZN MEDICAL CENTRE'
+  ClientHeight = 475
+  ClientWidth = 737
+  Color = clGray
+  Font.Charset = DEFAULT_CHARSET
+  Font.Color = clWindowText
+  Font.Height = -11
+  Font.Name = 'Tahoma'
+  Font.Style = []
+  OldCreateOrder = False
+  Position = poDesktopCenter
+  PixelsPerInch = 96
+  TextHeight = 13
+  object Label1: TLabel
+    Left = 256
+    Top = 152
+    Width = 50
+    Height = 16
+    Caption = 'Mark(%)'
+    Font.Charset = DEFAULT_CHARSET
+    Font.Color = clWindowText
+    Font.Height = -13
+    Font.Name = 'Tahoma'
+    Font.Style = []
+    ParentFont = False
+  end
+  object Label2: TLabel
+    Left = 253
+    Top = 200
+    Width = 50
+    Height = 16
+    Caption = 'Mark(%)'
+    Font.Charset = DEFAULT_CHARSET
+    Font.Color = clWindowText
+    Font.Height = -13
+    Font.Name = 'Tahoma'
+    Font.Style = []
+    ParentFont = False
+  end
+  object Label3: TLabel
+    Left = 253
+    Top = 248
+    Width = 50
+    Height = 16
+    Caption = 'Mark(%)'
+    Font.Charset = DEFAULT_CHARSET
+    Font.Color = clWindowText
+    Font.Height = -13
+    Font.Name = 'Tahoma'
+    Font.Style = []
+    ParentFont = False
+  end
+  object Label4: TLabel
+    Left = 48
+    Top = 24
+    Width = 245
+    Height = 27
+    Caption = 'Grade 10 Student Profile:'
+    Font.Charset = ANSI_CHARSET
+    Font.Color = clWindowText
+    Font.Height = -21
+    Font.Name = 'Tempus Sans ITC'
+    Font.Style = [fsBold]
+    ParentFont = False
+  end
+  object Label5: TLabel
+    Left = 48
+    Top = 73
+    Width = 135
+    Height = 18
+    Caption = 'Enter student name:'
+    Font.Charset = DEFAULT_CHARSET
+    Font.Color = clWindowText
+    Font.Height = -15
+    Font.Name = 'Tahoma'
+    Font.Style = []
+    ParentFont = False
+  end
+  object Label6: TLabel
+    Left = 48
+    Top = 120
+    Width = 333
+    Height = 18
+    Caption = 'Details of Top 3 Subjects and Marks(%) in term 1:'
+    Font.Charset = DEFAULT_CHARSET
+    Font.Color = clWindowText
+    Font.Height = -15
+    Font.Name = 'Tahoma'
+    Font.Style = []
+    ParentFont = False
+  end
+  object cmbSubjects: TComboBox
+    Left = 48
+    Top = 151
+    Width = 169
+    Height = 22
+    Font.Charset = DEFAULT_CHARSET
+    Font.Color = clWindowText
+    Font.Height = -12
+    Font.Name = 'Tahoma'
+    Font.Style = []
+    ParentFont = False
+    TabOrder = 0
+    Text = 'SELECT SUBJECT 1'
+    Items.Strings = (
+      'ENGLISH'
+      'AFRIKAANS'
+      'MATHEMATICS'
+      'LIFE OIRIENTATION'
+      'PHYSICAL SCIENCE'
+      'LIFE SCIENCE'
+      'INFORMATION TECHNOLOGY'
+      '')
+  end
+  object cmbSub2: TComboBox
+    Left = 48
+    Top = 192
+    Width = 169
+    Height = 22
+    Font.Charset = DEFAULT_CHARSET
+    Font.Color = clWindowText
+    Font.Height = -12
+    Font.Name = 'Tahoma'
+    Font.Style = []
+    ParentFont = False
+    TabOrder = 1
+    Text = 'SELECT SUBJECT 2'
+    Items.Strings = (
+      'ENGLISH'
+      'AFRIKAANS'
+      'MATHEMATICS'
+      'LIFE OIRIENTATION'
+      'PHYSICAL SCIENCE'
+      'LIFE SCIENCE'
+      'INFORMATION TECHNOLOGY')
+  end
+  object cmbSub3: TComboBox
+    Left = 48
+    Top = 240
+    Width = 169
+    Height = 22
+    Font.Charset = DEFAULT_CHARSET
+    Font.Color = clWindowText
+    Font.Height = -12
+    Font.Name = 'Tahoma'
+    Font.Style = []
+    ParentFont = False
+    TabOrder = 2
+    Text = 'SELECT SUBJECT 3'
+    Items.Strings = (
+      'ENGLISH'
+      'AFRIKAANS'
+      'MATHEMATICS'
+      'LIFE OIRIENTATION'
+      'PHYSICAL SCIENCE'
+      'LIFE SCIENCE'
+      'INFORMATION TECHNOLOGY')
+  end
+  object spn2: TSpinEdit
+    Left = 332
+    Top = 192
+    Width = 49
+    Height = 22
+    MaxValue = 100
+    MinValue = 0
+    TabOrder = 3
+    Value = 0
+  end
+  object spn3: TSpinEdit
+    Left = 332
+    Top = 240
+    Width = 49
+    Height = 22
+    MaxValue = 100
+    MinValue = 0
+    TabOrder = 4
+    Value = 0
+  end
+  object spn1: TSpinEdit
+    Left = 332
+    Top = 151
+    Width = 49
+    Height = 22
+    MaxValue = 100
+    MinValue = 0
+    TabOrder = 5
+    Value = 0
+  end
+  object Edit1: TEdit
+    Left = 208
+    Top = 74
+    Width = 121
+    Height = 21
+    TabOrder = 6
+  end
+  object Panel1: TPanel
+    Left = 48
+    Top = 304
+    Width = 333
+    Height = 153
+    Color = clGrayText
+    ParentBackground = False
+    TabOrder = 7
+    object Button1: TButton
+      Left = 24
+      Top = 32
+      Width = 81
+      Height = 105
+      Caption = 'SUBMIT APPLICATION'
+      TabOrder = 0
+      WordWrap = True
+    end
+    object redOut: TRichEdit
+      Left = 136
+      Top = 32
+      Width = 169
+      Height = 105
+      Font.Charset = ANSI_CHARSET
+      Font.Color = clWindowText
+      Font.Height = -11
+      Font.Name = 'Tahoma'
+      Font.Style = []
+      Lines.Strings = (
+        'Display Details Received:'
+        '')
+      ParentFont = False
+      TabOrder = 1
+    end
+  end
+  object Panel2: TPanel
+    Left = 408
+    Top = 304
+    Width = 305
+    Height = 153
+    Color = clGrayText
+    ParentBackground = False
+    TabOrder = 8
+  end
+end

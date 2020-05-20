@@ -1,0 +1,169 @@
+object Form1: TForm1
+  Left = 0
+  Top = 0
+  Caption = 'Form1'
+  ClientHeight = 519
+  ClientWidth = 695
+  Color = clBtnFace
+  Font.Charset = DEFAULT_CHARSET
+  Font.Color = clWindowText
+  Font.Height = -11
+  Font.Name = 'Tahoma'
+  Font.Style = []
+  OldCreateOrder = False
+  PixelsPerInch = 96
+  TextHeight = 13
+  object GroupBox1: TGroupBox
+    Left = 8
+    Top = 8
+    Width = 281
+    Height = 193
+    Caption = 'GroupBox1'
+    TabOrder = 0
+  end
+  object GroupBox2: TGroupBox
+    Left = 328
+    Top = 8
+    Width = 361
+    Height = 193
+    Caption = 'Electricity'
+    TabOrder = 1
+    object Label1: TLabel
+      Left = 16
+      Top = 32
+      Width = 83
+      Height = 13
+      Caption = 'Previous Reading'
+    end
+    object Label2: TLabel
+      Left = 16
+      Top = 64
+      Width = 79
+      Height = 13
+      Caption = 'Current Reading'
+    end
+    object Label3: TLabel
+      Left = 16
+      Top = 99
+      Width = 86
+      Height = 13
+      Caption = 'Electricity Amount'
+    end
+    object edtPrev: TEdit
+      Left = 120
+      Top = 29
+      Width = 121
+      Height = 21
+      TabOrder = 0
+    end
+    object edtCurr: TEdit
+      Left = 120
+      Top = 61
+      Width = 121
+      Height = 21
+      TabOrder = 1
+    end
+    object edtElect: TEdit
+      Left = 120
+      Top = 96
+      Width = 121
+      Height = 21
+      TabOrder = 2
+    end
+    object Button1: TButton
+      Left = 112
+      Top = 144
+      Width = 75
+      Height = 25
+      Caption = 'Question 1.2'
+      TabOrder = 3
+    end
+  end
+  object GroupBox3: TGroupBox
+    Left = 8
+    Top = 248
+    Width = 281
+    Height = 237
+    Caption = 'Rates'
+    TabOrder = 2
+    object Label4: TLabel
+      Left = 16
+      Top = 32
+      Width = 71
+      Height = 13
+      Caption = 'Property Value'
+    end
+    object Label5: TLabel
+      Left = 16
+      Top = 72
+      Width = 68
+      Height = 13
+      Caption = 'Rates Amount'
+    end
+    object edtPropVal: TEdit
+      Left = 93
+      Top = 32
+      Width = 145
+      Height = 21
+      TabOrder = 0
+    end
+    object RadioGroup1: TRadioGroup
+      Left = 16
+      Top = 99
+      Width = 222
+      Height = 86
+      Caption = 'Type of Propery'
+      Items.Strings = (
+        'Commercial'
+        'Residential')
+      TabOrder = 1
+    end
+    object edtRate: TEdit
+      Left = 93
+      Top = 72
+      Width = 145
+      Height = 21
+      TabOrder = 2
+    end
+    object Button2: TButton
+      Left = 88
+      Top = 201
+      Width = 75
+      Height = 25
+      Caption = 'Question 1.4'
+      TabOrder = 3
+    end
+  end
+  object GroupBox4: TGroupBox
+    Left = 328
+    Top = 207
+    Width = 361
+    Height = 304
+    Caption = 'GroupBox4'
+    TabOrder = 3
+    object redDisplay: TRichEdit
+      Left = 16
+      Top = 24
+      Width = 321
+      Height = 230
+      Font.Charset = ANSI_CHARSET
+      Font.Color = clWindowText
+      Font.Height = -11
+      Font.Name = 'Tahoma'
+      Font.Style = []
+      Lines.Strings = (
+        '')
+      ParentFont = False
+      TabOrder = 0
+      Zoom = 100
+    end
+    object Button3: TButton
+      Left = 128
+      Top = 260
+      Width = 75
+      Height = 25
+      Caption = 'Question 1.5'
+      TabOrder = 1
+    end
+  end
+end

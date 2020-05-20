@@ -1,0 +1,38 @@
+unit EmployeeProjects_U;
+
+interface
+
+uses
+  Windows, Messages, SysUtils, Variants, Classes, Graphics, Controls, Forms,
+  Dialogs, EmployeeProjectsDataModule, StdCtrls, Grids, DBGrids, ExtCtrls,
+  ComCtrls;
+
+type
+  TForm5 = class(TForm)
+    pgtProjectEmployees: TPageControl;
+    tabEmployees: TTabSheet;
+    tabProjects: TTabSheet;
+    Panel1: TPanel;
+    Panel2: TPanel;
+    DBGrid1: TDBGrid;
+    GroupBox1: TGroupBox;
+    btnAdd: TButton;
+    btnDelete: TButton;
+    btnUpdate: TButton;
+    GroupBox2: TGroupBox;
+    Button1: TButton;
+    DBGrid2: TDBGrid;
+  private
+    { Private declarations }
+  public
+    { Public declarations }
+  end;
+
+var
+  Form5: TForm5;
+
+implementation
+
+{$R *.dfm}
+
+end.

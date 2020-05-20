@@ -1,0 +1,8 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<BorlandProject>
+	<Transactions>
+    <Transaction>2017/05/09 15:40:46.974.pas,C:\Users\Administrator\Documents\RAD Studio\Projects\Unit1.pas=C:\Users\Administrator\Desktop\June P1 G11\Quest1\Customer_u.pas</Transaction>
+    <Transaction>2017/05/09 15:40:46.974.dfm,C:\Users\Administrator\Documents\RAD Studio\Projects\Unit1.dfm=C:\Users\Administrator\Desktop\June P1 G11\Quest1\Customer_u.dfm</Transaction>
+    <Transaction>2017/05/09 15:40:54.587.dproj,C:\Users\Administrator\Documents\RAD Studio\Projects\Project1.dproj=C:\Users\Administrator\Desktop\June P1 G11\Quest1\Customer_p.dproj</Transaction>
+  </Transactions>
+</BorlandProject>

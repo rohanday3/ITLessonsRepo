@@ -1,0 +1,31 @@
+QuestID,DateSubmitted,City,NumMobileDevices,InternetContract,ConnectionType,StudentID
+1,8/11/2013 0:00:00,Johannesburg,1,1,3G,7
+2,8/1/2013 0:00:00,Durban,0,0,,4
+3,8/9/2013 0:00:00,East London,1,0,Dial-up,4
+4,8/9/2013 0:00:00,Durban,3,1,3G,5
+5,8/10/2013 0:00:00,Bloemfontein,1,1,ADSL,9
+6,8/10/2013 0:00:00,Johannesburg,1,1,Dial-up,6
+7,8/2/2013 0:00:00,East London,1,0,3G,6
+8,8/7/2013 0:00:00,Cape Town,4,1,WiMAX,8
+9,8/4/2013 0:00:00,Port Elizabeth,2,1,ADSL,9
+10,8/3/2013 0:00:00,Johannesburg,3,1,ADSL,2
+11,8/5/2013 0:00:00,Bloemfontein,1,1,WiMAX,8
+12,8/9/2013 0:00:00,George,2,1,WiMAX,5
+13,8/5/2013 0:00:00,Pretoria,2,0,WiMAX,8
+14,8/4/2013 0:00:00,Bloemfontein,1,1,3G,7
+15,8/8/2013 0:00:00,Durban,0,0,,4
+16,8/10/2013 0:00:00,Pretoria,4,1,WiMAX,10
+17,8/8/2013 0:00:00,East London,1,1,3G,3
+18,8/7/2013 0:00:00,Johannesburg,1,1,WiMAX,8
+19,8/10/2013 0:00:00,Cape Town,3,0,ADSL,5
+20,8/6/2013 0:00:00,George,1,1,ADSL,3
+21,8/3/2013 0:00:00,Port Elizabeth,2,1,WiMAX,9
+22,8/1/2013 0:00:00,Cape Town,3,1,WiMAX,4
+23,8/5/2013 0:00:00,Cape Town,1,1,Dial-up,1
+24,8/8/2013 0:00:00,Bloemfontein,1,1,WiMAX,3
+25,8/8/2013 0:00:00,East London,0,0,,6
+26,8/3/2013 0:00:00,Johannesburg,3,1,3G,5
+27,8/5/2013 0:00:00,Cape Town,1,0,WiMAX,8
+28,8/7/2013 0:00:00,Durban,1,1,ADSL,5
+29,8/5/2013 0:00:00,Port Elizabeth,2,1,ADSL,6
+30,8/5/2013 0:00:00,Pretoria,1,1,ADSL,8

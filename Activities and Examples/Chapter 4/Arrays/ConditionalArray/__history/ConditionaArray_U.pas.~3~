@@ -1,0 +1,104 @@
+unit ConditionaArray_U;
+
+interface
+
+uses
+  Windows, Messages, SysUtils, Variants, Classes, Graphics, Controls, Forms,
+  Dialogs, StdCtrls, ComCtrls, ExtCtrls;
+
+type
+  TForm5 = class(TForm)
+    Panel1: TPanel;
+    btnInput: TButton;
+    btnSearch: TButton;
+    btnDisplay: TButton;
+    btnSort: TButton;
+    redOutput: TRichEdit;
+    procedure btnInputClick(Sender: TObject);
+    procedure btnDisplayClick(Sender: TObject);
+    procedure btnSearchClick(Sender: TObject);
+    procedure btnSortClick(Sender: TObject);
+  private
+    { Private declarations }
+  public
+    { Public declarations }
+  end;
+
+var
+  Form5: TForm5;
+  sArrNames: array[1..50] of string;
+  iIndex:integer;
+
+implementation
+
+{$R *.dfm}
+
+procedure TForm5.btnDisplayClick(Sender: TObject);
+Var
+I:integer;
+begin
+for I := 1 to iIndex do
+begin
+ redOutput.Lines.Add(sArrNames[I]);
+end;
+end;
+
+procedure TForm5.btnInputClick(Sender: TObject);
+Var
+sName : string;
+begin
+ iIndex:=1;
+ sName := InputBox('Name input','Enter name','Alex');
+ while lowercase(sName) <> 'stop' do
+ begin
+    sArrNames[iIndex] := sName;
+    Inc(iIndex);
+    sName := InputBox('Name input','Enter name','Alex');
+ end;
+end;
+
+procedure TForm5.btnSearchClick(Sender: TObject);
+Var
+iArrayPosition:integer;
+bFound:boolean;
+sSearchName:string;
+begin
+sSearchName := InputBox('Name search','Enter a name to search for','');
+iArrayPosition := 1;
+bFound := false;
+
+while (iArrayPosition <= iIndex) AND (bFound = false) do
+  begin
+    if sArrNames[iArrayPosition] = sSearchName then
+    begin
+      bFound := true;
+      redOutput.Lines.Add('The name '+sSearchName+' has been found');
+    end;
+    Inc(iArrayPosition);
+  end;
+  if(bFound = false) then
+  begin
+       redOutput.Lines.Add('The name '+sSearchName+' is not in the array');
+  end;
+end;
+
+procedure TForm5.btnSortClick(Sender: TObject);
+var
+i,J:integer;
+sTempName: string;
+begin
+  for I := 1 to 4 do
+    begin
+      for J := I+1 to 5 do
+        begin
+          if sArrNames[I] > sArrNames[J] then
+          begin
+            sTempName    := sArrNames[I];
+            sArrNames[I] := sArrNames[J];
+            sArrNames[J] := sTempname;
+          end;
+        end;
+    end;
+end;
+
+end.

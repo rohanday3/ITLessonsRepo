@@ -1,0 +1,72 @@
+unit Sports_U;
+
+interface
+
+uses
+  Windows, Messages, SysUtils, Variants, Classes, Graphics, Controls, Forms,
+  Dialogs, StdCtrls, ComCtrls, ExtCtrls;
+
+type
+  TForm5 = class(TForm)
+    Panel1: TPanel;
+    btnInput: TButton;
+    btnDisplay: TButton;
+    RadioGroup1: TRadioGroup;
+    GroupBox1: TGroupBox;
+    edtTeamSearch: TEdit;
+    Label1: TLabel;
+    btnSearch: TButton;
+    redOutput: TRichEdit;
+    procedure btnInputClick(Sender: TObject);
+    procedure btnDisplayClick(Sender: TObject);
+
+  private
+    { Private declarations }
+  public
+    { Public declarations }
+  end;
+
+var
+  Form5: TForm5;
+  sArrTeams: array [1 .. 50] of string;
+  rArrScores: array [1 .. 50] of real;
+  iSize: integer = 0;
+
+implementation
+
+{$R *.dfm}
+
+procedure TForm5.btnDisplayClick(Sender: TObject);
+Var
+I:integer;
+begin
+  redOutput.Paragraph.TabCount := 2;
+  redOutput.Paragraph.Tab[0] := 10;
+  redOutput.Paragraph.Tab[0] := 100;
+  redOutput.Lines.Add('Team name' + #9 + 'Team Score');
+  for I := 1 to iSize do
+  begin
+    redOutput.Lines.Add(sArrTeams[I]+#9+ FloatToStrF(rArrScores[I],ffFixed,4,2));
+  end;
+
+end;
+
+procedure TForm5.btnInputClick(Sender: TObject);
+Var
+  I: integer;
+  sTeamName: string;
+begin
+  sTeamName := InputBox('Team name input', 'Enter a team name', '');
+  while Uppercase(sTeamName) <> 'STOP' do
+  begin
+    Inc(iSize);
+    sArrTeams[iSize] := sTeamName;
+    rArrScores[iSize] := StrToFloat(InputBox('Score input', 'Enter the score',
+        '0'));
+    sTeamName := InputBox('Team name input', 'Enter a team name', '');
+  end;
+end;
+
+
+
+end.

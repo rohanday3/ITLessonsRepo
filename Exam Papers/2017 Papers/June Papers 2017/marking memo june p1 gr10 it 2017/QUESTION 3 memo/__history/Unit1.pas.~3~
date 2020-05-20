@@ -1,0 +1,68 @@
+unit Unit1;
+
+interface
+
+uses
+  Windows, Messages, SysUtils, Variants, Classes, Graphics, Controls, Forms,
+  Dialogs, StdCtrls;
+
+type
+  TfrmNumberProcessing = class(TForm)
+    Label1: TLabel;
+    edtNumber: TEdit;
+    btnEvenOdd: TButton;
+    edtEvenOrodd: TEdit;
+    btnSquare: TButton;
+    edtSquare: TEdit;
+    btnSquareRoot: TButton;
+    edtSquareRoot: TEdit;
+    btnPerfectSquare: TButton;
+    edtPerfectSquare: TEdit;
+
+     procedure btnEvenOddClick(Sender: TObject);
+    procedure btnSquareClick(Sender: TObject);
+    procedure btnSquareRootClick(Sender: TObject);
+    procedure btnPerfectSquareClick(Sender: TObject);
+  private
+    { Private declarations }
+  public
+    { Public declarations }
+  end;
+
+var
+  frmNumberProcessing: TfrmNumberProcessing;
+  iNumber : integer;
+
+implementation
+
+{$R *.dfm}
+
+procedure TfrmNumberProcessing.btnEvenOddClick(Sender: TObject);
+begin
+iNumber:= strToInt(edtNumber.Text);
+if iNumber mod 2=0 then
+edtEvenOrOdd.Text:='Even'
+else
+edtEvenOrOdd.Text := 'Odd';
+end;
+
+
+procedure TfrmNumberProcessing.btnPerfectSquareClick(Sender: TObject);
+begin
+if frac(sqrt(iNumber))=0 then
+edtPerfectSquare.Text:= 'Perfect Square'
+else
+edtPerfectSquare.Text:= 'Not a Perfect Square';
+end;
+
+procedure TfrmNumberProcessing.btnSquareClick(Sender: TObject);
+begin
+edtSquare.Text := intToStr(sqr(iNumber));
+end;
+
+procedure TfrmNumberProcessing.btnSquareRootClick(Sender: TObject);
+begin
+edtSquareRoot.Text:=floatToStr(sqrt(iNumber));
+end;
+
+end.

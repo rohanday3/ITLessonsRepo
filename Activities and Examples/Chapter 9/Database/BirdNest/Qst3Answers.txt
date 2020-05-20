@@ -1,0 +1,4 @@
+3.1: Select distinct classification from Birds
+3.2: select *  from stores
+3.3: NOT DONE
+3.4: NOT DONE

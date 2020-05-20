@@ -1,0 +1,172 @@
+object Form5: TForm5
+  Left = 0
+  Top = 0
+  Caption = 'Form5'
+  ClientHeight = 405
+  ClientWidth = 613
+  Color = clBtnFace
+  Font.Charset = DEFAULT_CHARSET
+  Font.Color = clWindowText
+  Font.Height = -11
+  Font.Name = 'Tahoma'
+  Font.Style = []
+  OldCreateOrder = False
+  PixelsPerInch = 96
+  TextHeight = 13
+  object DBGrid1: TDBGrid
+    Left = 24
+    Top = 16
+    Width = 569
+    Height = 153
+    DataSource = DataModule1.DataSource1
+    TabOrder = 0
+    TitleFont.Charset = DEFAULT_CHARSET
+    TitleFont.Color = clWindowText
+    TitleFont.Height = -11
+    TitleFont.Name = 'Tahoma'
+    TitleFont.Style = []
+  end
+  object GroupBox1: TGroupBox
+    Left = 24
+    Top = 175
+    Width = 569
+    Height = 50
+    Caption = 'Navigation buttons'
+    TabOrder = 1
+    object btnFirst: TButton
+      Left = 24
+      Top = 24
+      Width = 75
+      Height = 25
+      Caption = '<<'
+      TabOrder = 0
+    end
+    object btnPrevious: TButton
+      Left = 105
+      Top = 24
+      Width = 75
+      Height = 25
+      Caption = '<'
+      TabOrder = 1
+    end
+    object btnNext: TButton
+      Left = 186
+      Top = 24
+      Width = 75
+      Height = 25
+      Caption = '>'
+      TabOrder = 2
+    end
+    object btnLast: TButton
+      Left = 267
+      Top = 24
+      Width = 75
+      Height = 25
+      Caption = '>>'
+      TabOrder = 3
+    end
+  end
+  object grpFlightDetails: TGroupBox
+    Left = 33
+    Top = 248
+    Width = 297
+    Height = 149
+    Caption = 'Flight Details'
+    TabOrder = 2
+    object Label1: TLabel
+      Left = 16
+      Top = 24
+      Width = 66
+      Height = 13
+      Caption = 'Flight Number'
+    end
+    object Label2: TLabel
+      Left = 16
+      Top = 43
+      Width = 29
+      Height = 13
+      Caption = 'Airline'
+    end
+    object Label3: TLabel
+      Left = 16
+      Top = 70
+      Width = 59
+      Height = 13
+      Caption = 'Depart Date'
+    end
+    object Label4: TLabel
+      Left = 16
+      Top = 99
+      Width = 108
+      Height = 13
+      Caption = 'Number of passengers'
+    end
+    object dbedtFlightNum: TDBEdit
+      Left = 130
+      Top = 16
+      Width = 121
+      Height = 21
+      TabOrder = 0
+    end
+    object dbedtAirline: TDBEdit
+      Left = 130
+      Top = 43
+      Width = 121
+      Height = 21
+      TabOrder = 1
+    end
+    object dbedtDepartdate: TDBEdit
+      Left = 130
+      Top = 70
+      Width = 121
+      Height = 21
+      TabOrder = 2
+    end
+    object dbedtNumOfPassengers: TDBEdit
+      Left = 130
+      Top = 99
+      Width = 121
+      Height = 21
+      TabOrder = 3
+    end
+  end
+  object GroupBox3: TGroupBox
+    Left = 336
+    Top = 248
+    Width = 269
+    Height = 129
+    TabOrder = 3
+    object Button1: TButton
+      Left = 24
+      Top = 16
+      Width = 75
+      Height = 25
+      Caption = 'ADD'
+      TabOrder = 0
+    end
+    object Button2: TButton
+      Left = 144
+      Top = 16
+      Width = 75
+      Height = 25
+      Caption = 'UPDATE'
+      TabOrder = 1
+    end
+    object Button3: TButton
+      Left = 24
+      Top = 56
+      Width = 75
+      Height = 25
+      Caption = 'DELETE'
+      TabOrder = 2
+    end
+    object Button4: TButton
+      Left = 144
+      Top = 56
+      Width = 75
+      Height = 25
+      Caption = 'CLEAR'
+      TabOrder = 3
+    end
+  end
+end

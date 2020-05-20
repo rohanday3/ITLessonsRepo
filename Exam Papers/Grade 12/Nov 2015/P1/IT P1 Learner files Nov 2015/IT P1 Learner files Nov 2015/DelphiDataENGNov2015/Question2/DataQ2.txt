@@ -1,0 +1,23 @@
+PD1203 trained on 2013/12/07#Not completed
+CS3011 trained on 2015/10/19#Completed
+SM2102 trained on 2015/09/28#Not completed
+PD1203 trained on 2014/01/09#Completed
+SM2102 trained on 2015/10/03#Not completed
+CJ1506 trained on 2015/10/19#Completed
+PD1203 trained on 2014/01/21#Completed
+CS3011 trained on 2015/10/03#Completed
+CS3011 trained on 2015/10/01#Completed
+MS1605 trained on 2015/10/12#Completed
+PJ3006 trained on 2015/10/06#Completed
+PD1203 trained on 2015/10/21#Not completed
+CS3011 trained on 2015/10/12#Not completed
+PD1203 trained on 2014/02/22#Completed
+SM2102 trained on 2015/10/13#Completed
+CJ1506 trained on 2015/10/13#Completed
+MS1605 trained on 2015/10/20#Not completed
+PD1203 trained on 2014/04/19#Completed
+PJ3006 trained on 2015/10/11#Completed
+SM2102 trained on 2015/10/08#Completed
+CJ1506 trained on 2015/10/20#Completed
+PD1203 trained on 2015/07/23#Completed
+SM2102 trained on 2015/10/18#Completed

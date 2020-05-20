@@ -1,0 +1,41 @@
+unit ConditionaArray_U;
+
+interface
+
+uses
+  Windows, Messages, SysUtils, Variants, Classes, Graphics, Controls, Forms,
+  Dialogs, StdCtrls, ComCtrls, ExtCtrls;
+
+type
+  TForm5 = class(TForm)
+    Panel1: TPanel;
+    btnInput: TButton;
+    btnSearch: TButton;
+    btnDisplay: TButton;
+    btnSort: TButton;
+    redOutput: TRichEdit;
+    procedure btnInputClick(Sender: TObject);
+  private
+    { Private declarations }
+  public
+    { Public declarations }
+  end;
+
+var
+  Form5: TForm5;
+  sArrNames: array[1..50] of string;
+
+implementation
+
+{$R *.dfm}
+
+procedure TForm5.btnInputClick(Sender: TObject);
+var
+iIndex:integer;
+sName : string;
+begin
+ iIndex:=1;
+
+end;
+
+end.

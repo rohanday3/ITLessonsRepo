@@ -1,0 +1,40 @@
+object Form5: TForm5
+  Left = 0
+  Top = 0
+  Caption = 'Form5'
+  ClientHeight = 423
+  ClientWidth = 631
+  Color = clBtnFace
+  Font.Charset = DEFAULT_CHARSET
+  Font.Color = clWindowText
+  Font.Height = -11
+  Font.Name = 'Tahoma'
+  Font.Style = []
+  OldCreateOrder = False
+  PixelsPerInch = 96
+  TextHeight = 13
+  object Panel1: TPanel
+    Left = 8
+    Top = 8
+    Width = 615
+    Height = 385
+    TabOrder = 0
+    object btnEmployees: TButton
+      Left = 72
+      Top = 24
+      Width = 169
+      Height = 25
+      Caption = 'Display Employee details'
+      TabOrder = 0
+      OnClick = btnEmployeesClick
+    end
+    object lstEmployees: TListBox
+      Left = 32
+      Top = 55
+      Width = 281
+      Height = 162
+      ItemHeight = 13
+      TabOrder = 1
+    end
+  end
+end

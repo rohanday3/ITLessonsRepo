@@ -1,0 +1,26 @@
+unit MusicDataModule;
+
+interface
+
+uses
+  SysUtils, Classes, DB, ADODB;
+
+type
+  TDataModule6 = class(TDataModule)
+    MusicTable1: TADOTable;
+    DataSource1: TDataSource;
+    MusicConnection1: TADOConnection;
+  private
+    { Private declarations }
+  public
+    { Public declarations }
+  end;
+
+var
+  DataModule6: TDataModule6;
+
+implementation
+
+{$R *.dfm}
+
+end.

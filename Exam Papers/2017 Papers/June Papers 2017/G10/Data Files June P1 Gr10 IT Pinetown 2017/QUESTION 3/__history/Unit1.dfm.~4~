@@ -1,0 +1,115 @@
+object frmNumberProcessing: TfrmNumberProcessing
+  Left = 0
+  Top = 0
+  Caption = 'Number Processing'
+  ClientHeight = 619
+  ClientWidth = 612
+  Color = clBtnFace
+  Font.Charset = ANSI_CHARSET
+  Font.Color = clWindowText
+  Font.Height = -19
+  Font.Name = 'Arial'
+  Font.Style = [fsBold]
+  OldCreateOrder = False
+  PixelsPerInch = 96
+  TextHeight = 22
+  object Label1: TLabel
+    Left = 40
+    Top = 48
+    Width = 140
+    Height = 22
+    Caption = 'Input a number'
+  end
+  object edtNumber: TEdit
+    Left = 288
+    Top = 45
+    Width = 121
+    Height = 30
+    TabOrder = 0
+  end
+  object btnEvenOdd: TButton
+    Left = 24
+    Top = 144
+    Width = 169
+    Height = 25
+    Caption = 'Even or Odd?'
+    TabOrder = 1
+  end
+  object edtEvenOrodd: TEdit
+    Left = 312
+    Top = 139
+    Width = 121
+    Height = 30
+    TabOrder = 2
+  end
+  object btnSquare: TButton
+    Left = 24
+    Top = 192
+    Width = 169
+    Height = 25
+    Caption = 'Square = ...'
+    TabOrder = 3
+  end
+  object edtSquare: TEdit
+    Left = 312
+    Top = 189
+    Width = 121
+    Height = 30
+    TabOrder = 4
+  end
+  object btnSquareRoot: TButton
+    Left = 24
+    Top = 248
+    Width = 169
+    Height = 25
+    Caption = 'Square Root = ...'
+    TabOrder = 5
+  end
+  object edtSquareRoot: TEdit
+    Left = 296
+    Top = 248
+    Width = 201
+    Height = 30
+    TabOrder = 6
+  end
+  object btnPerfectSquare: TButton
+    Left = 24
+    Top = 304
+    Width = 225
+    Height = 25
+    Caption = 'Perfect Square or Not?'
+    TabOrder = 7
+  end
+  object edtPerfectSquare: TEdit
+    Left = 296
+    Top = 301
+    Width = 201
+    Height = 30
+    TabOrder = 8
+  end
+  object btnValidateNumber: TButton
+    Left = 24
+    Top = 88
+    Width = 169
+    Height = 25
+    Caption = 'Validate Number'
+    TabOrder = 9
+  end
+  object btnFirst5Multiples: TButton
+    Left = 24
+    Top = 344
+    Width = 545
+    Height = 33
+    Caption = 'Click here to find the first 5 multiples of the number input'
+    TabOrder = 10
+  end
+  object redOutput: TRichEdit
+    Left = 24
+    Top = 400
+    Width = 529
+    Height = 211
+    Lines.Strings = (
+      '')
+    TabOrder = 11
+  end
+end

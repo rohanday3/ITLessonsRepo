@@ -1,0 +1,35 @@
+unit SchoolDB_U;
+
+interface
+
+uses
+  SchoolDataModule,Windows, Messages, SysUtils, Variants, Classes, Graphics, Controls, Forms,
+  Dialogs, StdCtrls, ExtCtrls, DBCtrls, Grids, DBGrids;
+
+type
+  TfrmSchoolDB = class(TForm)
+    Button1: TButton;
+    Button2: TButton;
+    Button3: TButton;
+    Button4: TButton;
+    GroupBox1: TGroupBox;
+    DBGrid1: TDBGrid;
+    GroupBox2: TGroupBox;
+    Button5: TButton;
+    Button6: TButton;
+    Button7: TButton;
+    Edit1: TEdit;
+  private
+    { Private declarations }
+  public
+    { Public declarations }
+  end;
+
+var
+  frmSchoolDB: TfrmSchoolDB;
+
+implementation
+
+{$R *.dfm}
+
+end.

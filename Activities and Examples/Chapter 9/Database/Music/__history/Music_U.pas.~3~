@@ -1,0 +1,46 @@
+unit Music_U;
+
+interface
+
+uses
+  MusicDataModule,Windows, Messages, SysUtils, Variants, Classes, Graphics, Controls, Forms,
+  Dialogs, StdCtrls, Grids, DBGrids;
+
+type
+  TForm5 = class(TForm)
+    DBGrid1: TDBGrid;
+    btnAverageNumberSold: TButton;
+    Button2: TButton;
+    Button3: TButton;
+    edtAverage: TEdit;
+    edtHighest: TEdit;
+    lstOutput: TListBox;
+    procedure btnAverageNumberSoldClick(Sender: TObject);
+  private
+    { Private declarations }
+  public
+    { Public declarations }
+  end;
+
+var
+  Form5: TForm5;
+
+implementation
+
+{$R *.dfm}
+
+procedure TForm5.btnAverageNumberSoldClick(Sender: TObject);
+Var
+iTotal:integer;
+rAverage:real;
+begin
+  MusicDataModule.MusicTable1.First;
+
+  while not MusicDataModule.MusicTable1.Eof do
+    begin
+     iTotal := iTotal + MusicDataModule.MusicTable1['NumberSold'];
+     MusicDataModule.MusicTable1.Next;
+    end;
+end;
+
+end.

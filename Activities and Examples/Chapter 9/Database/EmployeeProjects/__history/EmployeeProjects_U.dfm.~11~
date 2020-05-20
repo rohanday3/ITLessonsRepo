@@ -1,0 +1,188 @@
+object Form5: TForm5
+  Left = 0
+  Top = 0
+  Caption = 'Form5'
+  ClientHeight = 425
+  ClientWidth = 687
+  Color = clBtnFace
+  Font.Charset = DEFAULT_CHARSET
+  Font.Color = clWindowText
+  Font.Height = -11
+  Font.Name = 'Tahoma'
+  Font.Style = []
+  OldCreateOrder = False
+  OnActivate = FormActivate
+  PixelsPerInch = 96
+  TextHeight = 13
+  object pgtProjectEmployees: TPageControl
+    Left = 0
+    Top = 8
+    Width = 679
+    Height = 393
+    ActivePage = tabProjects
+    TabOrder = 0
+    object tabEmployees: TTabSheet
+      Caption = 'Employees'
+      object Panel1: TPanel
+        Left = 3
+        Top = 1
+        Width = 670
+        Height = 361
+        TabOrder = 0
+        object DBGrid1: TDBGrid
+          Left = 0
+          Top = 0
+          Width = 657
+          Height = 128
+          DataSource = DataModule1.DataSource1
+          TabOrder = 0
+          TitleFont.Charset = DEFAULT_CHARSET
+          TitleFont.Color = clWindowText
+          TitleFont.Height = -11
+          TitleFont.Name = 'Tahoma'
+          TitleFont.Style = []
+        end
+        object GroupBox1: TGroupBox
+          Left = 0
+          Top = 144
+          Width = 169
+          Height = 177
+          Caption = 'Employees'
+          TabOrder = 1
+          object btnAdd: TButton
+            Left = 48
+            Top = 24
+            Width = 75
+            Height = 25
+            Caption = 'Add'
+            TabOrder = 0
+            OnClick = btnAddClick
+          end
+          object btnDelete: TButton
+            Left = 48
+            Top = 64
+            Width = 75
+            Height = 25
+            Caption = 'Delete'
+            TabOrder = 1
+            OnClick = btnDeleteClick
+          end
+          object btnUpdate: TButton
+            Left = 48
+            Top = 112
+            Width = 75
+            Height = 25
+            Caption = 'Update'
+            TabOrder = 2
+            OnClick = btnUpdateClick
+          end
+        end
+        object GroupBox2: TGroupBox
+          Left = 674
+          Top = 363
+          Width = 271
+          Height = 134
+          Caption = 'GroupBox2'
+          TabOrder = 2
+          object Button1: TButton
+            Left = 120
+            Top = 16
+            Width = 75
+            Height = 25
+            Caption = 'Button1'
+            TabOrder = 0
+          end
+        end
+        object redOutput: TRichEdit
+          Left = 176
+          Top = 144
+          Width = 481
+          Height = 185
+          Font.Charset = ANSI_CHARSET
+          Font.Color = clWindowText
+          Font.Height = -11
+          Font.Name = 'Tahoma'
+          Font.Style = []
+          Lines.Strings = (
+            '')
+          ParentFont = False
+          TabOrder = 3
+        end
+      end
+    end
+    object tabProjects: TTabSheet
+      Caption = 'Projects'
+      ImageIndex = 1
+      ExplicitHeight = 337
+      object Panel2: TPanel
+        Left = 0
+        Top = 0
+        Width = 673
+        Height = 326
+        TabOrder = 0
+        object DBGrid2: TDBGrid
+          Left = 0
+          Top = 0
+          Width = 409
+          Height = 120
+          DataSource = DataModule1.DataSource2
+          TabOrder = 0
+          TitleFont.Charset = DEFAULT_CHARSET
+          TitleFont.Color = clWindowText
+          TitleFont.Height = -11
+          TitleFont.Name = 'Tahoma'
+          TitleFont.Style = []
+        end
+        object lstProjects: TListBox
+          Left = 159
+          Top = 126
+          Width = 250
+          Height = 120
+          ItemHeight = 13
+          TabOrder = 1
+        end
+        object Button3: TButton
+          Left = 24
+          Top = 126
+          Width = 129
+          Height = 25
+          Caption = 'View project details'
+          TabOrder = 2
+          OnClick = Button3Click
+        end
+        object cmbEmployees: TComboBox
+          Left = 24
+          Top = 264
+          Width = 129
+          Height = 21
+          TabOrder = 3
+          OnChange = cmbEmployeesChange
+        end
+        object edtNumProjects: TEdit
+          Left = 168
+          Top = 264
+          Width = 241
+          Height = 21
+          TabOrder = 4
+        end
+      end
+    end
+  end
+  object Edit1: TEdit
+    Left = 512
+    Top = 403
+    Width = 121
+    Height = 26
+    TabOrder = 1
+    Text = 'Edit1'
+  end
+  object Button2: TButton
+    Left = 248
+    Top = 407
+    Width = 75
+    Height = 25
+    Caption = 'Button2'
+    TabOrder = 2
+    OnClick = Button2Click
+  end
+end

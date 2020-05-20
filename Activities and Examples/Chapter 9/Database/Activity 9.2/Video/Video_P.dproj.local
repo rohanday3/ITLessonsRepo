@@ -1,0 +1,10 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<BorlandProject>
+	<Transactions>
+    <Transaction>2016/01/08 11:29:48.485.pas,C:\Users\Georgina\Documents\RAD Studio\Projects\Unit5.pas=C:\Users\Georgina\Desktop\Delphi Projects\Database\Video\Video_U.pas</Transaction>
+    <Transaction>2016/01/08 11:29:48.485.dfm,C:\Users\Georgina\Documents\RAD Studio\Projects\Unit5.dfm=C:\Users\Georgina\Desktop\Delphi Projects\Database\Video\Video_U.dfm</Transaction>
+    <Transaction>2016/01/08 11:29:51.819.dproj,C:\Users\Georgina\Documents\RAD Studio\Projects\Project3.dproj=C:\Users\Georgina\Desktop\Delphi Projects\Database\Video\Video_P.dproj</Transaction>
+    <Transaction>2016/01/08 11:31:44.457.pas,C:\Users\Georgina\Desktop\Delphi Projects\Database\Video\Unit1.pas=C:\Users\Georgina\Desktop\Delphi Projects\Database\Video\VideoDataModule1.pas</Transaction>
+    <Transaction>2016/01/08 11:31:44.457.dfm,C:\Users\Georgina\Desktop\Delphi Projects\Database\Video\Unit1.dfm=C:\Users\Georgina\Desktop\Delphi Projects\Database\Video\VideoDataModule1.dfm</Transaction>
+  </Transactions>
+</BorlandProject>

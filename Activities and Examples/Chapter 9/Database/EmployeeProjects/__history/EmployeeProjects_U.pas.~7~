@@ -1,0 +1,72 @@
+unit EmployeeProjects_U;
+
+interface
+
+uses
+  Windows, Messages, SysUtils, Variants, Classes, Graphics, Controls, Forms,
+  Dialogs, EmployeeProjectsDataModule, StdCtrls, Grids, DBGrids, ExtCtrls,
+  ComCtrls;
+
+type
+  TForm5 = class(TForm)
+    pgtProjectEmployees: TPageControl;
+    tabEmployees: TTabSheet;
+    tabProjects: TTabSheet;
+    Panel1: TPanel;
+    Panel2: TPanel;
+    DBGrid1: TDBGrid;
+    GroupBox1: TGroupBox;
+    btnAdd: TButton;
+    btnDelete: TButton;
+    btnUpdate: TButton;
+    GroupBox2: TGroupBox;
+    Button1: TButton;
+    DBGrid2: TDBGrid;
+    Edit1: TEdit;
+    Button2: TButton;
+    procedure Button2Click(Sender: TObject);
+    procedure btnAddClick(Sender: TObject);
+  private
+    { Private declarations }
+  public
+    { Public declarations }
+  end;
+
+var
+  Form5: TForm5;
+
+implementation
+
+{$R *.dfm}
+
+procedure TForm5.btnAddClick(Sender: TObject);
+Var
+sID,sName,sSurname,sContactNumber:string;
+begin
+  sID:= Inputbox('Employee ID','Enter the employee id','');
+  sName:= Inputbox('Employee name','Enter the employee name','');
+  sSurname:= Inputbox('Employee surname','Enter the employee surname','');
+  sContactNumber:= Inputbox('Employee Contact number','Enter the employee contact number','');
+
+      DataModule1.ADOTable1.Insert;
+      DataModule1.ADOTable1['EmployeeID'] := sID;
+      DataModule1.ADOTable1['Name'] := sName;
+      DataModule1.ADOTable1['Surname'] := sSurname;
+      DataModule1.ADOTable1['ContactNumber'] := sContactNumber;
+      DataModule1.ADOTable1.Post;
+      DataModule1.ADOTable1.Refresh;
+end;
+
+procedure TForm5.Button2Click(Sender: TObject);
+begin
+ DataModule1.ADOTable2.First;
+
+  while not DataModule1.ADOTable2.Eof do
+     begin
+
+       Edit1.Text:= DataModule1.ADOTable2['DateEnded'] - DataModule1.ADOTable2['DateStarted'];
+       DataModule1.ADOTable2.Next;
+     end;
+end;
+
+end.

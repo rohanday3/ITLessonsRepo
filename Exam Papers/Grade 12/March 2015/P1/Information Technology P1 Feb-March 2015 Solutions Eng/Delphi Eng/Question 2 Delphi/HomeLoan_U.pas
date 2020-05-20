@@ -1,0 +1,98 @@
+unit HomeLoan_U;
+   //Possible solution for Question 2
+
+interface
+
+uses
+  sysUtils, Math, Messages, Dialogs;
+
+Type
+  THomeLoan = class(TObject)
+  // Qst 2.1.1
+    private
+      fApplicantName    : String;
+      fDisposableIncome,
+      fInterestRate,
+      fLoanAmount       : real;
+      fYears            : integer;
+    public
+      constructor Create(ApplicantName : String; DisposableIncome, Loan : real);
+      function getApplicantName : String;
+      procedure setInterestRate(InterestRate : real);
+      procedure setYears(NumberOfYears : integer);
+      function calculateInstalment  : real;
+      function isApproved() : boolean;
+      function toString : String;
+  end;
+
+implementation
+
+{ THomeLoan }
+
+// Question 2.1.2
+constructor THomeLoan.Create(ApplicantName : String; DisposableIncome, Loan : real);
+begin
+   fApplicantName := ApplicantName;
+   fDisposableIncome := DisposableIncome;
+   fLoanAmount := Loan;
+   fYears := 0;
+   fInterestRate := 0.0;
+end;
+// Question 2.1.3
+function THomeLoan.getApplicantName: String;
+begin
+  Result := fApplicantName;
+end;
+
+// Question 2.1.4
+procedure THomeLoan.setYears(NumberOfYears: integer);
+begin
+   fYears := NumberOfYears;
+end;
+
+procedure THomeLoan.setInterestRate(InterestRate : real);
+begin
+   fInterestRate := InterestRate;
+end;
+
+// Question 2.1.5
+function THomeLoan.calculateInstalment: real;
+var
+  rPayment, rRate : real;
+begin
+  rRate := fInterestRate / 100;
+  rPayment := (rRate * fLoanAmount)/(1-Power((1+rRate),-fYears));
+  Result := Round(rPayment / 12);
+end;
+
+// Question 2.1.6
+function THomeLoan.isApproved(): boolean;
+var
+  bApproved: boolean;
+
+begin
+   bApproved := true;
+   if (fLoanAmount > 800000) and (fYears < 25) then
+       bApproved := false;
+   if fLoanAmount <= 600000 then
+      begin
+         if fDisposableIncome < (calculateInstalment * 1.3) then
+           bApproved := false
+      end;
+   Result := bApproved;
+end;
+
+// Question 2.1.7
+function THomeLoan.toString: String;
+var
+  sOutput : String;
+begin
+  sOutput := 'Name of applicant: ' + fApplicantName  + #13;
+  sOutput := sOutput + 'Disposable income: R ' + FloatToStrF(fDisposableIncome, ffFixed, 8, 2) + #13;
+  sOutput := sOutput + 'Loan amount: R ' + FloatToStrF(fLoanAmount, ffFixed, 8, 2) + #13;
+  sOutput := sOutput + 'Number of years: ' + IntToStr(fYears) + #13;
+  sOutput := sOutput + 'Interest rate: ' + FloatToStrF(fInterestRate, ffFixed, 5,1) + '% ' + #13;
+  Result := sOutput;
+end;
+
+end.

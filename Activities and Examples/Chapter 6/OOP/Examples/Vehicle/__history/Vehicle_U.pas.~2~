@@ -1,0 +1,67 @@
+unit Vehicle_U;
+
+interface
+uses Sysutils,Math,Messages,Dialogs;
+type
+     TVehicle = class(TObject)
+     private
+       fMake,
+       fModel,
+       fColour:string;
+       fPrice:real;
+
+     public
+       { public declarations }
+       constructor Create(sMake,sModel,sColour:string; rPrice:real);
+       function getMake:string;
+       function getModel:string;
+       function getPrice:real;
+       function toString:string;
+       procedure setColour(sColour:string);
+       procedure serPrice(rPrice:real);
+
+     end;
+
+implementation
+
+{ TVehicle }
+
+constructor TVehicle.Create(sMake, sModel, sColour: string; rPrice: real);
+begin
+      fMake:= sMake;
+      fModel:=sModel;
+      fColour:=sColour;
+      fPrice := rPrice;
+end;
+
+function TVehicle.getMake: string;
+begin
+   Result := fMake;
+end;
+
+function TVehicle.getModel: string;
+begin
+    Result := fModel;
+end;
+
+function TVehicle.getPrice: real;
+begin
+  Result := fPrice;
+end;
+
+procedure TVehicle.setPrice(rPrice: real);
+begin
+   fPrice := rPrice;
+end;
+
+procedure TVehicle.setColour(sColour: string);
+begin
+   fColour := sColour;
+end;
+
+function TVehicle.toString: string;
+begin
+     Result := 'Make:' + fMake+#13+'Model:'+fModel+#13+'Colour:'+fColour+#13+'Price:'+FloatToStr(fPrice);
+end;
+
+end.

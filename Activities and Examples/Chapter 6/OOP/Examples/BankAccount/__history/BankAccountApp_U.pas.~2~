@@ -1,0 +1,40 @@
+unit BankAccountApp_U;
+
+interface
+
+uses
+  Windows, Messages, SysUtils, Variants, Classes, Graphics, Controls, Forms,
+  Dialogs, ExtCtrls, BankAccount_U, StdCtrls, ComCtrls;
+
+type
+  TForm5 = class(TForm)
+    Panel1: TPanel;
+    GroupBox1: TGroupBox;
+    Label1: TLabel;
+    edtAccountNumber: TEdit;
+    rgpAccountType: TRadioGroup;
+    Label2: TLabel;
+    lstBranchName: TListBox;
+    btnSubmit: TButton;
+    GroupBox2: TGroupBox;
+    edtAmount: TEdit;
+    Label3: TLabel;
+    btnDeposit: TButton;
+    btnWithdraw: TButton;
+    btnStatement: TButton;
+    redOutput: TRichEdit;
+  private
+    { Private declarations }
+  public
+    { Public declarations }
+  end;
+
+var
+  Form5: TForm5;
+  objBankAccount : TBankAccount;
+
+implementation
+
+{$R *.dfm}
+
+end.

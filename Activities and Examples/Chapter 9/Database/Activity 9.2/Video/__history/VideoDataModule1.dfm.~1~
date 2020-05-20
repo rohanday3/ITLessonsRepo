@@ -1,0 +1,21 @@
+object DataModule1: TDataModule1
+  OldCreateOrder = False
+  Height = 191
+  Width = 323
+  object ADOConnection1: TADOConnection
+    ConnectionString = 
+      'C:\Users\Georgina\Desktop\Delphi Projects\Database\Video\VideoDB' +
+      '.accdb'
+    LoginPrompt = False
+    Left = 24
+    Top = 24
+  end
+  object ADOTable1: TADOTable
+    Left = 112
+    Top = 16
+  end
+  object DataSource1: TDataSource
+    Left = 192
+    Top = 32
+  end
+end

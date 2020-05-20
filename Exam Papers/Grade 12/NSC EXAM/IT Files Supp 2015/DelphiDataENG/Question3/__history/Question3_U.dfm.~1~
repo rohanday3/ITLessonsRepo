@@ -1,0 +1,94 @@
+object Form1: TForm1
+  Left = 334
+  Top = 149
+  Width = 637
+  Height = 434
+  Caption = 'Question3'
+  Color = clBtnFace
+  Font.Charset = DEFAULT_CHARSET
+  Font.Color = clWindowText
+  Font.Height = -11
+  Font.Name = 'Tahoma'
+  Font.Style = []
+  OldCreateOrder = False
+  PixelsPerInch = 96
+  TextHeight = 13
+  object grpSalesDetail: TGroupBox
+    Left = 10
+    Top = 15
+    Width = 599
+    Height = 159
+    Caption = 'Agent'#39's sales details'
+    Color = clBtnFace
+    Ctl3D = False
+    Font.Charset = DEFAULT_CHARSET
+    Font.Color = clWindowText
+    Font.Height = -13
+    Font.Name = 'Tahoma'
+    Font.Style = []
+    ParentColor = False
+    ParentCtl3D = False
+    ParentFont = False
+    TabOrder = 0
+    object lblAgentName: TLabel
+      Left = 24
+      Top = 128
+      Width = 4
+      Height = 16
+      Font.Charset = DEFAULT_CHARSET
+      Font.Color = clWindowText
+      Font.Height = -13
+      Font.Name = 'Tahoma'
+      Font.Style = [fsBold]
+      ParentFont = False
+    end
+    object lblAgentCode: TLabel
+      Left = 27
+      Top = 40
+      Width = 106
+      Height = 16
+      Caption = 'Enter agent'#39's code'
+    end
+    object edtCode: TEdit
+      Left = 27
+      Top = 66
+      Width = 201
+      Height = 22
+      TabOrder = 0
+    end
+    object btnAgentsName: TButton
+      Left = 277
+      Top = 48
+      Width = 177
+      Height = 41
+      Caption = 'Find agent'#39's name'
+      TabOrder = 1
+      OnClick = btnAgentsNameClick
+    end
+    object btnAgentsSalesRecord: TButton
+      Left = 278
+      Top = 104
+      Width = 177
+      Height = 40
+      Caption = 'Agent'#39's sales record'
+      TabOrder = 2
+      OnClick = btnAgentsSalesRecordClick
+    end
+  end
+  object grpDisplay: TGroupBox
+    Left = 8
+    Top = 187
+    Width = 601
+    Height = 198
+    Caption = 'Display area'
+    Ctl3D = False
+    Font.Charset = DEFAULT_CHARSET
+    Font.Color = clWindowText
+    Font.Height = -13
+    Font.Name = 'Tahoma'
+    Font.Style = []
+    ParentCtl3D = False
+    ParentFont = False
+    TabOrder = 1
+  end
+end

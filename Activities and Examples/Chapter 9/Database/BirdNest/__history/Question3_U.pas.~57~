@@ -1,0 +1,249 @@
+unit Question3_U;
+
+interface
+
+uses
+  Windows, Messages, SysUtils, Variants, Classes, Graphics, Controls, Forms,
+  Dialogs, jpeg, pngimage, ExtCtrls, ComCtrls, StdCtrls, Buttons, Grids,
+  DBGrids,
+  DB, ADODB, DateUtils;
+
+type
+  TForm1 = class(TForm)
+    Panel1: TPanel;
+    Image1: TImage;
+    Image2: TImage;
+    Label1: TLabel;
+    Label2: TLabel;
+    pgcQ3: TPageControl;
+    TabSheet2: TTabSheet;
+    Image4: TImage;
+    dbgStores: TDBGrid;
+    dbgBirds: TDBGrid;
+    btnCost: TButton;
+    edtCost: TEdit;
+    cmbProvince: TComboBox;
+    btnExotic: TButton;
+    btnAverage: TButton;
+    btnExpensive: TButton;
+    btnYellowMacaw: TButton;
+    btnAge: TButton;
+    Button6: TButton;
+    Button1: TButton;
+    edtAverage: TEdit;
+    edtExpensive: TEdit;
+    redOutput: TRichEdit;
+
+    procedure FormShow(Sender: TObject);
+
+    procedure btnCostClick(Sender: TObject);
+    procedure btnExoticClick(Sender: TObject);
+    procedure btnAverageClick(Sender: TObject);
+    procedure btnExpensiveClick(Sender: TObject);
+    procedure Button1Click(Sender: TObject);
+    procedure btnYellowMacawClick(Sender: TObject);
+    procedure btnAgeClick(Sender: TObject);
+
+  private
+    { Private declarations }
+  public
+    { Public declarations }
+    procedure connect;
+  end;
+
+var
+  Form1: TForm1;
+  tblStores: TADOtable;
+  tblBirds: TADOtable;
+
+
+implementation
+
+{$R *.dfm}
+
+procedure TForm1.btnAgeClick(Sender: TObject);
+Var
+   iYears,iMonths:integer;
+   dDate : TDateTime;
+   sJoin:String;
+begin
+   tblBirds.First;
+   dDate := now;
+   while not tblBirds.Eof do
+   begin
+      iYears := YearOf(now) - YearOf(tblBirds['HatchDate']);
+      sJoin := tblBirds['RefNum'] +#9 + tblBirds['Classification'] + #9 + tblBirds['Colour']+#9;
+      if iYears >=1 then
+           sJoin := sJoin + intToStr(iYears)+' years'
+           else
+           begin
+           iMonths := MonthOf(now) - MonthOf(tblBirds['HatchDate']);
+           sJoin := sJoin + intToStr(iMonths)+' months'
+           end;
+   end;
+end;
+
+procedure TForm1.btnAverageClick(Sender: TObject);
+Var
+  iCountParrots:integer;
+  rSum,rAverage:real;
+begin
+  rSum :=0;
+  iCountParrots:=0;
+  tblBirds.First;
+  while not tblBirds.Eof do
+  begin
+    if tblBirds['Classification']= 'Parrot' then
+        begin
+          rSum := rSum + tblBirds['Price'];
+          Inc(iCountParrots);
+        end;//if
+        tblBirds.Next;
+  end; //while
+  rAverage:= rSum /iCountParrots;
+  edtAverage.Text := FloatToStrF(rAverage,ffFixed,6,2);
+end;
+
+procedure TForm1.btnCostClick(Sender: TObject);
+Var
+  rDeliveryCost: real;
+  sProvinceForDelivery, sProvinceStore: String;
+begin
+  rDeliveryCost := 450;
+  sProvinceForDelivery := cmbProvince.Items[cmbProvince.ItemIndex];
+
+  if tblStores.Locate('StoreID', tblBirds['StoreID'], [loCaseInsensitive]) then
+  begin
+    sProvinceStore := tblStores['Province'];
+  end;
+  if sProvinceForDelivery <> sProvinceStore then
+    rDeliveryCost := rDeliveryCost * 1.6;
+  edtCost.Text := FloatToStr(rDeliveryCost);
+end;
+
+// Provided code
+procedure TForm1.btnExoticClick(Sender: TObject);
+Var
+  sJoin:String;
+begin
+  tblBirds.First;
+  while not tblBirds.Eof do
+  begin
+    if tblBirds['Exotic'] = true then
+    begin
+      redOutput.Lines.Add('Ref Num:'+tblBirds['RefNum'] + #13 + 'Classification:'+tblBirds['Classification'] +#13
+        + 'Colour:'+tblBirds['Colour']  + #13 + 'Price:'+
+        FloatToStr(tblBirds['Price'])+#13+'===============================');
+    end;
+
+    tblBirds.Next;
+  end;
+end;
+
+procedure TForm1.btnExpensiveClick(Sender: TObject);
+Var
+   rHighestPrice:real;
+   sBirdName:String;
+begin
+   rHighestPrice :=0;
+   sBirdName :='';
+   while not tblBirds.Eof do
+  begin
+    if tblBirds['Price'] > rHighestPrice then
+        begin
+          rHighestPrice:=  tblBirds['Price'];
+          sBirdName := tblBirds['Classification'];
+        end;//if
+        tblBirds.Next;
+  end; //while
+    edtExpensive.Text := sBirdName+':'+ FloatToStrF(rHighestPrice,ffCurrency,6,2);
+end;
+
+procedure TForm1.btnYellowMacawClick(Sender: TObject);
+begin
+redOutput.Lines.Clear;
+    tblBirds.First;
+  while not tblBirds.Eof do
+  begin
+    if (tblBirds['Classification'] = 'Macaw') AND (pos('yellow',lowercase(tblBirds['Colour'])) >0)then
+    begin
+      redOutput.Lines.Add(tblBirds['RefNum'] + #9 + tblBirds['Classification']  + #9+tblBirds['Colour']
+      + #9 + DateToStr(tblBirds['HatchDate']) +  #9+
+        FloatToStr(tblBirds['Price']) + #9  + intToStr(tblBirds['StoreID']));
+    end;
+    tblBirds.Next;
+  end;
+end;
+
+procedure TForm1.Button1Click(Sender: TObject);
+Var
+  sSearch:String;
+  bFound:boolean;
+
+begin
+  bFound := false;
+  sSearch := inputbox('','Enter store name to search for','');
+  tblStores.First;
+  while (Not(bFound)) AND (not tblStores.Eof) do
+  begin
+    if tblStores['StoreName'] = sSearch  then
+    begin
+      ShowMessage(intToStr(tblStores['StoreID']) + '#' + tblStores['StoreName'] +'#'+ tblStores['Province']+ '#'+tblStores['ContactNumber']);
+      bFound := true;
+    end; //if
+     tblStores.Next;
+  end;  //while
+
+  if Not(bFound) then
+  begin
+    ShowMessage(sSearch+' store name cannot be located');
+  end;
+end;
+
+procedure TForm1.connect;
+const
+  DBName = 'BirdStoresDB.mdb';
+Var
+  dbConnection: TADOConnection;
+  dsrStores: TDataSource;
+  dsrBirds: TDataSource;
+  sDataSource: String;
+begin
+  dbConnection := TADOConnection.Create(Form1);
+  sDataSource := ExtractFilePath(ParamStr(0)) + DBName;
+  dbConnection.ConnectionString :=
+    'Provider=Microsoft.Jet.OLEDB.4.0;' + 'Data Source=' + sDataSource +
+    ';Persist Security Info=False';
+  dbConnection.LoginPrompt := False;
+
+  tblStores := TADOtable.Create(Form1);
+  tblStores.Connection := dbConnection;
+  tblStores.TableName := 'StoresTbl';
+  tblStores.Open;
+
+  tblBirds := TADOtable.Create(Form1);
+  tblBirds.Connection := dbConnection;
+  tblBirds.TableName := 'BirdsTbl';
+  tblBirds.Open;
+
+  dsrStores := TDataSource.Create(Form1);
+  dsrStores.DataSet := tblStores;
+  dbgStores.DataSource := dsrStores;
+
+  dsrBirds := TDataSource.Create(Form1);
+  dsrBirds.DataSet := tblBirds;
+  dbgBirds.DataSource := dsrBirds;
+end;
+
+procedure TForm1.FormShow(Sender: TObject);
+begin
+  connect;
+  redOutput.Paragraph.TabCount:=3;
+  redOutput.Paragraph.Tab[0]:=0;
+  redOutput.Paragraph.Tab[1]:=30;
+  redOutput.Paragraph.Tab[2]:=60;
+
+
+end;
+
+end.

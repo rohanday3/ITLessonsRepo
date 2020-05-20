@@ -1,0 +1,104 @@
+unit LearnerMarks_U;
+
+interface
+
+uses
+  Windows, Messages, SysUtils, Variants, Classes, Graphics, Controls, Forms,
+  Dialogs, StdCtrls, ComCtrls, ExtCtrls;
+
+type
+  TForm5 = class(TForm)
+    Panel1: TPanel;
+    btnRead: TButton;
+    btnDisplay: TButton;
+    btnSort: TButton;
+    redOutput: TRichEdit;
+    procedure btnReadClick(Sender: TObject);
+    procedure btnDisplayClick(Sender: TObject);
+    procedure btnSortClick(Sender: TObject);
+    procedure displayArrays;
+  private
+    { Private declarations }
+  public
+    { Public declarations }
+  end;
+
+var
+  Form5: TForm5;
+  sArrNames: array [1 .. 50] of string;
+  iArrMarks: array [1 .. 50] of integer;
+  iCount: integer = 0;
+
+implementation
+
+{$R *.dfm}
+
+procedure TForm5.btnDisplayClick(Sender: TObject);
+begin
+ displayArrays;
+end;
+
+procedure TForm5.btnReadClick(Sender: TObject);
+Var
+  fLearnerFile: TextFile;
+  sLine: string;
+  iPosition: integer;
+
+begin
+  if fileExists('learnerMarks.txt') then
+  begin
+    AssignFile(fLearnerFile, 'learnerMarks.txt');
+    Reset(fLearnerFile);
+    while not eof(fLearnerFile) do
+    begin
+      Inc(iCount);
+      readln(fLearnerFile, sLine);
+      iPosition := Pos('#', sLine);
+      sArrNames[iCount] := Copy(sLine, 1, iPosition - 1);
+      Delete(sLine, 1, iPosition);
+      iArrMarks[iCount] := StrToInt(sLine);
+    end;
+    end
+    else
+    begin
+      MessageDlg('File does not exist', mtError, [mbOk], 0);
+    end;
+end;
+
+procedure TForm5.btnSortClick(Sender: TObject);
+Var
+I,J, iTempMark:integer;
+sTempName:string;
+begin
+for I := 1 to iCount - 1 do
+  Begin
+    for J := I+1 to iCount do
+      begin
+        if sArrNames[I] > sArrNames[J]  then
+        begin
+          sTempName := sArrNames[I];
+          sArrNames [I] := sArrNames[J];
+          sArrNames [J] := sTempName;
+
+          iTempMark := iArrMarks[I];
+          iArrMarks[I]:= iArrMarks[J];
+          iArrMarks[J]:= iTempMark;
+        end;
+      end;
+  End;
+    displayArrays;
+end;
+
+procedure TForm5.displayArrays;
+Var
+i:integer;
+begin
+redOutput.Lines.Clear;
+redOutput.Lines.Add('Names'+#9 + 'Marks');
+for I := 1 to  iCount do
+  begin
+    redOutput.Lines.Add(sArrNames[I]+#9 + intToStr(iArrMarks[I]));
+  end;
+end;
+
+end.

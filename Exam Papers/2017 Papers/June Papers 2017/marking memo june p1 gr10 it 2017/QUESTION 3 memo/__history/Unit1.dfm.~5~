@@ -1,0 +1,121 @@
+object frmNumberProcessing: TfrmNumberProcessing
+  Left = 0
+  Top = 0
+  Caption = 'Number Processing'
+  ClientHeight = 583
+  ClientWidth = 683
+  Color = clBtnFace
+  Font.Charset = ANSI_CHARSET
+  Font.Color = clWindowText
+  Font.Height = -19
+  Font.Name = 'Arial'
+  Font.Style = [fsBold]
+  OldCreateOrder = False
+  PixelsPerInch = 96
+  TextHeight = 22
+  object Label1: TLabel
+    Left = 40
+    Top = 48
+    Width = 140
+    Height = 22
+    Caption = 'Input a number'
+  end
+  object edtNumber: TEdit
+    Left = 288
+    Top = 45
+    Width = 121
+    Height = 30
+    TabOrder = 0
+  end
+  object btnEvenOdd: TButton
+    Left = 24
+    Top = 160
+    Width = 169
+    Height = 25
+    Caption = 'Even or Odd?'
+    TabOrder = 1
+    OnClick = btnEvenOddClick
+  end
+  object edtEvenOrodd: TEdit
+    Left = 288
+    Top = 157
+    Width = 121
+    Height = 30
+    TabOrder = 2
+  end
+  object btnSquare: TButton
+    Left = 24
+    Top = 208
+    Width = 169
+    Height = 25
+    Caption = 'Square = ...'
+    TabOrder = 3
+    OnClick = btnSquareClick
+  end
+  object edtSquare: TEdit
+    Left = 288
+    Top = 203
+    Width = 121
+    Height = 30
+    TabOrder = 4
+  end
+  object btnSquareRoot: TButton
+    Left = 24
+    Top = 256
+    Width = 169
+    Height = 25
+    Caption = 'Square Root = ...'
+    TabOrder = 5
+    OnClick = btnSquareRootClick
+  end
+  object edtSquareRoot: TEdit
+    Left = 288
+    Top = 253
+    Width = 209
+    Height = 30
+    TabOrder = 6
+  end
+  object btnPerfectSquare: TButton
+    Left = 24
+    Top = 312
+    Width = 225
+    Height = 25
+    Caption = 'Perfect Square or Not?'
+    TabOrder = 7
+    OnClick = btnPerfectSquareClick
+  end
+  object edtPerfectSquare: TEdit
+    Left = 288
+    Top = 309
+    Width = 209
+    Height = 30
+    TabOrder = 8
+  end
+  object btnValidate: TButton
+    Left = 24
+    Top = 100
+    Width = 156
+    Height = 25
+    Caption = 'Validate Number'
+    TabOrder = 9
+    OnClick = btnValidateClick
+  end
+  object btnFirst5Multiples: TButton
+    Left = 24
+    Top = 376
+    Width = 601
+    Height = 25
+    Caption = 'Click here to find the first 5 multiples of the number input '
+    TabOrder = 10
+    OnClick = btnFirst5MultiplesClick
+  end
+  object redOutput: TRichEdit
+    Left = 112
+    Top = 424
+    Width = 449
+    Height = 189
+    Lines.Strings = (
+      '')
+    TabOrder = 11
+  end
+end

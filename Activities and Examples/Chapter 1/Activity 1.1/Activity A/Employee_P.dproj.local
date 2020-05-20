@@ -1,0 +1,11 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<BorlandProject>
+	<Transactions>
+    <Transaction>2015/11/29 20:20:52.211.pas,C:\Users\pc6\Documents\RAD Studio\Projects\Unit6.pas=C:\Users\pc6\Desktop\Delphi Projects\Book Projects\Lesson 2\Lesson2_U.pas</Transaction>
+    <Transaction>2015/11/29 20:20:52.211.dfm,C:\Users\pc6\Documents\RAD Studio\Projects\Unit6.dfm=C:\Users\pc6\Desktop\Delphi Projects\Book Projects\Lesson 2\Lesson2_U.dfm</Transaction>
+    <Transaction>2015/11/29 20:21:07.985.dproj,C:\Users\pc6\Documents\RAD Studio\Projects\Project4.dproj=C:\Users\pc6\Desktop\Delphi Projects\Book Projects\Lesson 2\Lesson2_P.dproj</Transaction>
+    <Transaction>2015/11/29 20:23:20.296.pas,C:\Users\pc6\Desktop\Delphi Projects\Book Projects\Lesson 2\Lesson2_U.pas=C:\Users\pc6\Desktop\Delphi Projects\Book Projects\Activity 1\Employee_U.pas</Transaction>
+    <Transaction>2015/11/29 20:23:20.296.dfm,C:\Users\pc6\Desktop\Delphi Projects\Book Projects\Lesson 2\Lesson2_U.dfm=C:\Users\pc6\Desktop\Delphi Projects\Book Projects\Activity 1\Employee_U.dfm</Transaction>
+    <Transaction>2015/11/29 20:23:38.188.dproj,C:\Users\pc6\Desktop\Delphi Projects\Book Projects\Lesson 2\Lesson2_P.dproj=C:\Users\pc6\Desktop\Delphi Projects\Book Projects\Activity 1\Employee_P.dproj</Transaction>
+  </Transactions>
+</BorlandProject>

@@ -1,0 +1,94 @@
+unit HomeLoan_U;
+   //Enter your examination number here.
+
+interface
+
+uses
+  sysutils, Math, Messages, Dialogs;
+
+Type
+  THomeLoan = class(TObject)
+  // Qst 2.1.1
+    private
+      fApplicantName    : String;
+      fDisposableIncome,
+      fInterestRate,
+      fLoan             : real;
+      iYears            : Integer;
+    public
+      constructor Create(DisposableIncome, Loan : real);
+      procedure setInterestRate(InterestRate : Real);
+      procedure setYears(NumberOfYears : Integer);
+      function calculateInstalmentAmount  : Real;
+      function isApproved() : Boolean;
+      function toString : String;
+  end;
+
+implementation
+
+{ THomeLoan }
+
+// Qst 2.1.2
+constructor THomeLoan.Create(DisposableIncome, Loan : real);
+begin
+   fDisposableIncome := DisposableIncome;
+   fLoan := Loan;
+   iYears := 0;
+   fInterestRate := 0.0;
+end;
+
+// Qst 2.1.3
+procedure THomeLoan.setYears(NumberOfYears: Integer);
+begin
+   iYears := NumberOfYears;
+end;
+
+procedure THomeLoan.setInterestRate(InterestRate : Real);
+begin
+   fInterestRate := InterestRate;
+end;
+
+// Qst 2.1.4
+function THomeLoan.calculateInstalmentAmount: Real;
+var
+  payment, rate : Real;
+begin
+  rate := fInterestRate / 100;
+  payment := (rate * fLoan)/(1-Power((1+rate),-iYears));
+  Result := Round(payment / 12);
+end;
+
+// Qst 2.1.5
+function THomeLoan.isApproved() : Boolean;
+var
+  approved: boolean;
+
+begin
+   approved := true;
+   if (fLoan > 800000) and (iYears < 25)
+     Then  approved := false;
+   if fLoan <= 600000
+    then begin
+            if fDisposableIncome < (calculateInstalmentAmount * 1.3)
+              then approved := False
+          end
+    else   if fDisposableIncome < (calculateInstalmentAmount * 1.5)
+            then approved := False;
+
+    Result := approved;
+end;
+
+
+// Qst 2.1.7
+function THomeLoan.toString: String;
+var
+  out : string;
+begin
+  out := 'Loan amount: ' + FloatToStrF(fLoan, ffCurrency, 8, 2) + #13;
+  out := out + 'Number of years: ' + IntToStr(iYears) + #13;
+  out := out + 'Interest rate: ' + FloatToStrF(fInterestRate, ffFixed, 5,1) + '% ' + #13;
+  out := out + 'Loan APPROVED with a monthly installment of ' + FloatToStrF(calculateInstalmentAmount, ffCurrency, 8, 2);
+  Result := out;
+end;
+
+end.

@@ -1,0 +1,28 @@
+object DataModule1: TDataModule1
+  OldCreateOrder = False
+  Height = 223
+  Width = 487
+  object SchoolDBConnection1: TADOConnection
+    Connected = True
+    ConnectionString = 
+      'Provider=Microsoft.ACE.OLEDB.12.0;Data Source=C:\Users\Georgina\' +
+      'Desktop\Delphi Projects\Database\SchoolDB\SchoolDB.accdb;Mode=Re' +
+      'adWrite;Persist Security Info=False'
+    LoginPrompt = False
+    Mode = cmReadWrite
+    Provider = 'Microsoft.ACE.OLEDB.12.0'
+    Left = 56
+    Top = 24
+  end
+  object SchoolTable1: TADOTable
+    Connection = SchoolDBConnection1
+    TableName = 'TblLearners'
+    Left = 152
+    Top = 24
+  end
+  object SchoolDataSource1: TDataSource
+    DataSet = SchoolTable1
+    Left = 240
+    Top = 24
+  end
+end

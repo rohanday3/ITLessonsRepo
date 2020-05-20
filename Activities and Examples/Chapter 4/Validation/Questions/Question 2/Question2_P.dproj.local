@@ -1,0 +1,11 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<BorlandProject>
+	<Transactions>
+    <Transaction>2017/02/13 10:02:40.999.pas,C:\Users\prvt\Documents\RAD Studio\Projects\Unit2.pas=C:\Users\prvt\Desktop\Validation\Examples\Example 2\Example2_U.pas</Transaction>
+    <Transaction>2017/02/13 10:02:40.999.dfm,C:\Users\prvt\Documents\RAD Studio\Projects\Unit2.dfm=C:\Users\prvt\Desktop\Validation\Examples\Example 2\Example2_U.dfm</Transaction>
+    <Transaction>2017/02/13 10:02:45.792.dproj,C:\Users\prvt\Documents\RAD Studio\Projects\Project2.dproj=C:\Users\prvt\Desktop\Validation\Examples\Example 2\Example2_P.dproj</Transaction>
+    <Transaction>2017/02/13 10:08:40.769.pas,C:\Users\prvt\Desktop\Validation\Examples\Example 2\Example2_U.pas=C:\Users\prvt\Desktop\Validation\Questions\Question 2\Question2_U.pas</Transaction>
+    <Transaction>2017/02/13 10:08:40.769.dfm,C:\Users\prvt\Desktop\Validation\Examples\Example 2\Example2_U.dfm=C:\Users\prvt\Desktop\Validation\Questions\Question 2\Question2_U.dfm</Transaction>
+    <Transaction>2017/02/13 10:08:55.692.dproj,C:\Users\prvt\Desktop\Validation\Examples\Example 2\Example2_P.dproj=C:\Users\prvt\Desktop\Validation\Questions\Question 2\Question2_P.dproj</Transaction>
+  </Transactions>
+</BorlandProject>

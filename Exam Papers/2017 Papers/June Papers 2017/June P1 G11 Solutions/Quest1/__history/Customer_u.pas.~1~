@@ -1,0 +1,38 @@
+unit Customer_u;
+
+interface
+
+uses
+  Windows, Messages, SysUtils, Variants, Classes, Graphics, Controls, Forms,
+  Dialogs, StdCtrls, ComCtrls;
+
+type
+  TForm1 = class(TForm)
+    pgc1: TPageControl;
+    ts1: TTabSheet;
+    ts2: TTabSheet;
+    ts3: TTabSheet;
+    ts4: TTabSheet;
+    grp1: TGroupBox;
+    edt1: TEdit;
+    edt2: TEdit;
+    chk1: TCheckBox;
+    lbl1: TLabel;
+    lbl2: TLabel;
+    edt3: TEdit;
+    lbl3: TLabel;
+    edt4: TEdit;
+  private
+    { Private declarations }
+  public
+    { Public declarations }
+  end;
+
+var
+  Form1: TForm1;
+
+implementation
+
+{$R *.dfm}
+
+end.

@@ -1,0 +1,56 @@
+unit Components_U;
+
+interface
+
+uses
+  Windows, Messages, SysUtils, Variants, Classes, Graphics, Controls, Forms,
+  Dialogs, StdCtrls, ExtCtrls, ComCtrls, Grids;
+
+type
+  TForm6 = class(TForm)
+    Panel1: TPanel;
+    Edit1: TEdit;
+    Edit2: TEdit;
+    Label1: TLabel;
+    Label2: TLabel;
+    GroupBox1: TGroupBox;
+    Button1: TButton;
+    Edit3: TEdit;
+    Edit4: TEdit;
+    Edit5: TEdit;
+    Label3: TLabel;
+    Label4: TLabel;
+    lstColour: TListBox;
+    ComboBox1: TComboBox;
+    ri: TButton;
+    RichEdit1: TRichEdit;
+    rbtMale: TRadioButton;
+    RadioButton2: TRadioButton;
+    rgpColour: TRadioGroup;
+    StringGrid1: TStringGrid;
+    procedure riClick(Sender: TObject);
+  private
+    { Private declarations }
+  public
+    { Public declarations }
+  end;
+
+var
+  Form6: TForm6;
+
+implementation
+
+{$R *.dfm}
+
+procedure TForm6.riClick(Sender: TObject);
+var a:string;
+begin
+    a:= lstColour.Items[lstColour.ItemIndex];
+    RichEdit1.Lines.Add(a);
+    lstColour.Items.Delete(1);
+    lstColour.Items.Add('Purple');
+
+end;
+
+end.
+

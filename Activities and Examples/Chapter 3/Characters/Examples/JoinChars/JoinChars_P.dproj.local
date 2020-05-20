@@ -1,0 +1,11 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<BorlandProject>
+  <Transactions>
+    <Transaction>2015/12/17 06:04:38.127.pas,C:\Users\Georgina\Documents\RAD Studio\Projects\Unit5.pas=C:\Users\Georgina\Desktop\Delphi Projects\Characters\Examples\Char1\Char1_U.pas</Transaction>
+    <Transaction>2015/12/17 06:04:38.127.dfm,C:\Users\Georgina\Documents\RAD Studio\Projects\Unit5.dfm=C:\Users\Georgina\Desktop\Delphi Projects\Characters\Examples\Char1\Char1_U.dfm</Transaction>
+    <Transaction>2015/12/17 06:04:41.824.dproj,C:\Users\Georgina\Documents\RAD Studio\Projects\Project3.dproj=C:\Users\Georgina\Desktop\Delphi Projects\Characters\Examples\Char1\Char1_P.dproj</Transaction>
+    <Transaction>2015/12/17 06:20:57.950.pas,C:\Users\Georgina\Desktop\Delphi Projects\Characters\Examples\Char1\Char1_U.pas=C:\Users\Georgina\Desktop\Delphi Projects\Characters\Examples\JoinChars\JoinChars_U.pas</Transaction>
+    <Transaction>2015/12/17 06:20:57.950.dfm,C:\Users\Georgina\Desktop\Delphi Projects\Characters\Examples\Char1\Char1_U.dfm=C:\Users\Georgina\Desktop\Delphi Projects\Characters\Examples\JoinChars\JoinChars_U.dfm</Transaction>
+    <Transaction>2015/12/17 06:21:14.271.dproj,C:\Users\Georgina\Desktop\Delphi Projects\Characters\Examples\Char1\Char1_P.dproj=C:\Users\Georgina\Desktop\Delphi Projects\Characters\Examples\JoinChars\JoinChars_P.dproj</Transaction>
+  </Transactions>
+</BorlandProject>

@@ -1,0 +1,5 @@
+Agency Name: Wakefields Properties
+Estate Agencies Selling Flats: 5
+Estate Agencies Selling Houses: 4
+Estate Agencies Selling Industrial Parks: 3
+Total Salaries : 74462.3055

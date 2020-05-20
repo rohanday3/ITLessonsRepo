@@ -1,0 +1,140 @@
+unit Strings_u;
+
+interface
+
+uses
+  Windows, Messages, SysUtils, Variants, Classes, Graphics, Controls, Forms,
+  Dialogs, ComCtrls, Vcl.ExtCtrls, Vcl.StdCtrls;
+
+type
+  TForm1 = class(TForm)
+    pgc1: TPageControl;
+    ts1: TTabSheet;
+    ts2: TTabSheet;
+    redOutput: TRichEdit;
+    Button1: TButton;
+    Button2: TButton;
+    Button3: TButton;
+    pnlBudget: TPanel;
+    redDisplay: TRichEdit;
+    GroupBox1: TGroupBox;
+    edtFN: TEdit;
+    edtSN: TEdit;
+    Label1: TLabel;
+    Label2: TLabel;
+    edtID: TEdit;
+    Label3: TLabel;
+    cmbProv: TComboBox;
+    Label4: TLabel;
+    chbAcc: TCheckBox;
+    Label5: TLabel;
+    Button4: TButton;
+    Button5: TButton;
+    btnRegCand: TButton;
+    cmboProv: TComboBox;
+    Button7: TButton;
+    procedure Button4Click(Sender: TObject);
+    procedure Button7Click(Sender: TObject);
+    procedure Button5Click(Sender: TObject);
+    procedure btnRegCandClick(Sender: TObject);
+  private
+    { Private declarations }
+  public
+    { Public declarations }
+  end;
+
+var
+  Form1: TForm1;
+  provCode,regCode:string;
+implementation
+
+{$R *.dfm}
+
+
+
+procedure TForm1.btnRegCandClick(Sender: TObject);
+var
+init,firstN : string;
+  I: Integer;
+begin
+  firstN := edtFN.Text;
+  if pos(' ',firstN)=0 then
+  begin
+    init :=uppercase(firstN[1])+' '+edtSN.Text;
+  end
+  else
+  begin
+    init := firstN[1];
+    for I := 2 to length(firstN)do
+    begin
+      if firstN[i]=' ' then
+      begin
+         init := uppercase(init+firstN[i+1]);
+      end;
+    end;
+     init := init+' '+edtSN.Text;
+  end;
+  redDisplay.Lines.Add('Initials & Surname : '+init);
+  redDisplay.Lines.Add('Province :'+cmbProv.Text);
+  if chbAcc.Checked then
+  begin
+    redDisplay.Lines.Add('Accomodation required : Yes');
+  end
+  else
+  begin
+    redDisplay.Lines.Add('Accomodation required : No');
+  end;
+  redDisplay.Lines.Add('Registration Code :'+regCode);
+end;
+
+procedure TForm1.Button4Click(Sender: TObject);
+var
+prov :string;
+posSpc : integer;
+begin
+ prov:= cmbProv.text;
+ posSpc := pos(' ',prov);
+ if posSpc=0 then
+ begin
+   provCode := UpperCase(copy(prov,1,3));
+ end
+ else
+ begin
+   provCode := uppercase(prov[1]+prov[posSpc+1]);
+ end;
+end;
+
+procedure TForm1.Button5Click(Sender: TObject);
+var
+surN ,id,last3 : string;
+begin
+  surN := edtSN.Text;
+  last3 := copy(surN,length(surn)-3);
+  regCode := last3+id[7]+id[8]+id[9];
+  if chbAcc.Checked then
+  begin
+    regCode := uppercase(regCode+'#'+provCode);
+  end
+  else
+  begin
+    regCode := uppercase(regCode+'-'+provCode);
+  end;
+  btnRegCand.Enabled := true;
+end;
+
+procedure TForm1.Button7Click(Sender: TObject);
+var
+id :string;
+begin
+   id := edtID.Text;
+  while length(id)<> 13 do
+  begin
+    edtID.Clear;
+    id := InputBox('Data','Enter valid ID number','');
+  end;
+  edtID.Text:= id;
+end;
+
+
+
+end.

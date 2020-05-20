@@ -1,0 +1,50 @@
+unit Strings_u;
+
+interface
+
+uses
+  Windows, Messages, SysUtils, Variants, Classes, Graphics, Controls, Forms,
+  Dialogs, ComCtrls, Vcl.ExtCtrls, Vcl.StdCtrls;
+
+type
+  TForm1 = class(TForm)
+    pgc1: TPageControl;
+    ts1: TTabSheet;
+    ts2: TTabSheet;
+    redOutput: TRichEdit;
+    Button1: TButton;
+    Button2: TButton;
+    Button3: TButton;
+    pnlBudget: TPanel;
+    redDisplay: TRichEdit;
+    GroupBox1: TGroupBox;
+    edtFN: TEdit;
+    edtSN: TEdit;
+    Label1: TLabel;
+    Label2: TLabel;
+    edtID: TEdit;
+    Label3: TLabel;
+    cmbProv: TComboBox;
+    Label4: TLabel;
+    CheckBox1: TCheckBox;
+    Label5: TLabel;
+    Button4: TButton;
+    Button5: TButton;
+    Button6: TButton;
+    cmboProv: TComboBox;
+  private
+    { Private declarations }
+  public
+    { Public declarations }
+  end;
+
+var
+  Form1: TForm1;
+
+implementation
+
+{$R *.dfm}
+
+
+
+end.

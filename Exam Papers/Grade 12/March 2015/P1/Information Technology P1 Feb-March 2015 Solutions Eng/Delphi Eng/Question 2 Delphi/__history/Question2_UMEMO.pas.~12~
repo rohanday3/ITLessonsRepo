@@ -1,0 +1,133 @@
+unit Question2_UMEMO;
+
+// Possible solution for Question 2
+interface
+
+uses
+  Windows, Messages, SysUtils, Variants, Classes, Graphics, Controls, Forms,
+  Dialogs, StdCtrls, ComCtrls, Buttons, ExtCtrls, Math;
+
+type
+  TfrmQuestion2 = class(TForm)
+    grpLoans: TGroupBox;
+    redQ2: TRichEdit;
+    cboApplicants: TComboBox;
+    pnlClose: TPanel;
+    bmbClose: TBitBtn;
+    pnlButtons: TPanel;
+    Label2: TLabel;
+    edtInterest: TEdit;
+    btnLocateApplicant: TButton;
+    btnReCalculate: TButton;
+    btnEvaluate: TButton;
+    GroupBox1: TGroupBox;
+    grp1: TGroupBox;
+    cboYears: TComboBox;
+    Label1: TLabel;
+    procedure FormCreate(Sender: TObject);
+    procedure btnEvaluateClick(Sender: TObject);
+    procedure btnLocateApplicantClick(Sender: TObject);
+  private
+    { Private declarations }
+  public
+    { Public declarations }
+  end;
+
+var
+  frmQuestion2: TfrmQuestion2;
+
+implementation
+
+uses
+  HomeLoan_U;
+
+const
+  iNumberOfYears = 25;
+
+var
+  Homeloan: THomeLoan;
+  sAppName, sFileName: string;
+  rIncome, rExp, rLoan, rDispIncome: real;
+  iYears, iErr: Integer;
+{$R *.dfm}
+{$R+}
+
+procedure TfrmQuestion2.btnLocateApplicantClick(Sender: TObject);
+var
+  bValidFile, bValidApplicant: Boolean;
+  TFile: TextFile;
+  sName: string;
+
+begin
+  // Question 2.2.1.
+
+  bValidFile := false;
+
+  if cboApplicants.ItemIndex = -1 then
+  begin
+    MessageDlg('Please select an applicant', mtError, [mbOK], 0);
+    Exit;
+  end
+  else
+  begin
+    sAppName := cboApplicants.Items[cboApplicants.ItemIndex];
+    sFileName := sAppName + '.txt';
+  end;
+
+  redQ2.Lines.Clear;
+  If NOT FileExists(sFileName) then
+  begin
+    redQ2.Lines.Add('No home loan application was submitted by ' + sAppName);
+    btnEvaluate.Enabled := false;
+    Exit;
+  end
+  else
+  begin
+    AssignFile(TFile, sFileName);
+    Reset(TFile);
+    Readln(TFile, sName);
+    Readln(TFile, rIncome);
+    Readln(TFile, rExp);
+    Readln(TFile, rLoan);
+    redQ2.Lines.Add('An home loan application was found for: ' + sName);
+    rDispIncome := rIncome - rExp;
+    Homeloan := THomeLoan.Create(rDispIncome, rLoan);
+    MessageDlg('Home loan object successfully created', mtConfirmation, [mbOK], 0);
+    btnEvaluate.Enabled := true;
+    bValidApplicant := true;
+    closeFile(TFile);
+  end;
+  btnReCalculate.Enabled := (bValidFile AND bValidApplicant);
+end;
+
+procedure TfrmQuestion2.btnEvaluateClick(Sender: TObject);
+var
+  sInt: string;
+  rInterest: real;
+begin
+  // Code Question 2.2.2
+
+  iYears := StrToInt(cboYears.Items[cboYears.ItemIndex]);
+  sInt := edtInterest.text;
+  Val(sInt, rInterest, iErr);
+  if iErr <> 0 then
+    rInterest := 0;
+
+  Homeloan.setInterestRate(rInterest);
+  Homeloan.setYears(iYears);
+  redQ2.Lines.Clear;
+  redQ2.Lines.Add('Applicant: ' + sAppName);
+
+  if Homeloan.isApproved() then
+    redQ2.Lines.Add(Homeloan.toString)
+  else
+    redQ2.Lines.Add('Your home loan is NOT APPOVED');
+
+end;
+
+procedure TfrmQuestion2.FormCreate(Sender: TObject);
+begin
+  CurrencyString := 'R ';
+end;
+
+end.

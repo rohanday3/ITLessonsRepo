@@ -1,0 +1,53 @@
+object Form2: TForm2
+  Left = 0
+  Top = 0
+  Caption = 'Form2'
+  ClientHeight = 100
+  ClientWidth = 409
+  Color = clBtnFace
+  Font.Charset = DEFAULT_CHARSET
+  Font.Color = clWindowText
+  Font.Height = -11
+  Font.Name = 'Tahoma'
+  Font.Style = []
+  OldCreateOrder = False
+  PixelsPerInch = 96
+  TextHeight = 13
+  object Panel1: TPanel
+    Left = 0
+    Top = 0
+    Width = 601
+    Height = 377
+    TabOrder = 0
+    object Label1: TLabel
+      Left = 24
+      Top = 16
+      Width = 50
+      Height = 13
+      Caption = 'ID number'
+    end
+    object edtID: TEdit
+      Left = 112
+      Top = 13
+      Width = 225
+      Height = 21
+      TabOrder = 0
+    end
+    object btnValidate: TButton
+      Left = 24
+      Top = 54
+      Width = 75
+      Height = 25
+      Caption = 'Validate'
+      TabOrder = 1
+      OnClick = btnValidateClick
+    end
+    object edtValid: TEdit
+      Left = 112
+      Top = 56
+      Width = 225
+      Height = 21
+      TabOrder = 2
+    end
+  end
+end

@@ -1,0 +1,52 @@
+object Form6: TForm6
+  Left = 0
+  Top = 0
+  Caption = 'Form6'
+  ClientHeight = 287
+  ClientWidth = 541
+  Color = clBtnFace
+  Font.Charset = DEFAULT_CHARSET
+  Font.Color = clWindowText
+  Font.Height = -11
+  Font.Name = 'Tahoma'
+  Font.Style = []
+  OldCreateOrder = False
+  PixelsPerInch = 96
+  TextHeight = 13
+  object Label1: TLabel
+    Left = 72
+    Top = 27
+    Width = 31
+    Height = 13
+    Caption = 'Label1'
+  end
+  object Calculate: TButton
+    Left = 72
+    Top = 136
+    Width = 75
+    Height = 25
+    Caption = 'Calculate'
+    TabOrder = 0
+    OnClick = CalculateClick
+  end
+  object edtNumEggs: TEdit
+    Left = 184
+    Top = 24
+    Width = 121
+    Height = 21
+    TabOrder = 1
+  end
+  object redOutput: TRichEdit
+    Left = 184
+    Top = 120
+    Width = 225
+    Height = 121
+    Font.Charset = ANSI_CHARSET
+    Font.Color = clWindowText
+    Font.Height = -11
+    Font.Name = 'Tahoma'
+    Font.Style = []
+    ParentFont = False
+    TabOrder = 2
+  end
+end

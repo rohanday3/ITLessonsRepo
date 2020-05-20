@@ -1,0 +1,30 @@
+object DataModule1: TDataModule1
+  OldCreateOrder = False
+  Height = 191
+  Width = 323
+  object ADOConnection1: TADOConnection
+    Connected = True
+    ConnectionString = 
+      'Provider=Microsoft.ACE.OLEDB.12.0;Data Source=C:\Users\Georgina\' +
+      'Desktop\Delphi Projects\Database\Video\VideoDB.accdb;Persist Sec' +
+      'urity Info=False'
+    LoginPrompt = False
+    Mode = cmShareDenyNone
+    Provider = 'Microsoft.ACE.OLEDB.12.0'
+    Left = 24
+    Top = 24
+  end
+  object ADOTable1: TADOTable
+    Active = True
+    Connection = ADOConnection1
+    CursorType = ctStatic
+    TableName = 'TblVideos'
+    Left = 112
+    Top = 16
+  end
+  object DataSource1: TDataSource
+    DataSet = ADOTable1
+    Left = 192
+    Top = 32
+  end
+end

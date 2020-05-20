@@ -1,0 +1,351 @@
+71;BSL#Javelin-Boys u/15;7
+154;FNH#Shot put-Girl u/17;1
+40;SFD#100m-Girls u/17;2
+25;SFD#Javelin-Boys u/17;3
+259;EDB#Javelin-Girls u/15;5
+109;SFD#Shot put-Girls u/17;8
+344;GFH#100m-Boys u/15;3
+269;SFD#Long jump-Girls u/19;4
+167;SFD#Long jump-Girls u/19;8
+14;SFD#100m-Girls u/19;1
+299;SFD#200m-Girls u/15;4
+96;SFD#400m-Boys u/17;6
+158;SFD#Long jump-Girls u/15;6
+172;SFD#Javelin-Boys u/15;5
+61;SFD#100m-Girls u/15;4
+294;BPK#Shot put-Girls u/17;4
+27;EDB#200m-Boys u/17;6
+215;BSL#200m-Girls u/17;4
+232;GFH#400m-Girls u/17;4
+204;RTN#100m-Girls u/17;1
+164;RTN#Shot put-Boys u/17;2
+188;RTN#Javelin-Boys u/15;1
+327;BSL#400m-Girls u/15;5
+58;SFD#Shot put-Boys u/17;6
+288;SFD#100m-Girls u/15;1
+144;SFD#Javelin-Girls u/15;1
+319;SFD#100m-Girls u/17;1
+108;SFD#Shot put-Boys u/15;6
+229;SFD#400m-Boys u/17;7
+191;BSL#200m-Girls u/15;4
+87;BSL#400m-Girls u/17;2
+198;BPK#400m-Boys u/15;4
+179;EDB#100m-Boys u/15;2
+292;RTN#100m-Girls u/19;7
+175;BSL#Javelin-Girls u/17;1
+114;FNH#Shot put-Girls u/17;8
+302;BPK#400m-Boys u/15;4
+200;GFH#Javelin-Boys u/17;1
+300;RTN#Shot put-Boys u/17;5
+349;SFD#400m-Boys u/17;6
+69;SFD#Javelin-Boys u/15;7
+59;EDB#400m-Boys u/17;5
+24;GFH#Shot put-Girls u/17;5
+10;FNH#200m-Girls u/17;4
+2;FNH#400m-Boys u/17;5
+122;FNH#Javelin-Boys u/15;4
+82;FNH#Shot put-Boys u/17;3
+112;GFH#Javelin-Boys u/15;7
+75;EDB#200m-Boys u/19;4
+316;RTN#400m-Girls u/15;1
+309;SFD#Javelin-Boys u/15;1
+118;BPK#400m-Boys u/15;3
+161;BRT#200m-Boys u/17;7
+68;RTN#100m-Girls u/15;8
+7;BSL#400m-Boys u/15;1
+130;FNH#200m-Boys u/17;6
+120;GFH#Javelin-Boys u/17;4
+280;GFH#100m-Girls u/17;5
+247;BSL#Javelin-Girls u/19;6
+79;BSL#Long jump-Boys u/19;1
+264;GFH#100m-Girls u/17;1
+334;BPK#Javelin-Boys u/15;6
+245;SFD#Shot put-Boys u/17;3
+153;BRT#Long jump-Boys u/15;2
+151;BSL#Javelin-Boys u/17;6
+5;SFD#Javelin-Boys u/17;3
+128;GFH#Shot put-Boys u/15;4
+185;BRT#100m-Boys u/17;5
+348;RTN#Long jump-Girls u/15;2
+70;BPK#400m-Girls u/15;8
+181;SFD#Shot put-Girls u/15;6
+65;BRT#Javelin-Boys u/17;5
+67;EDB#Shot put-Boys u/15;7
+240;GFH#400m-Girls u/15;3
+220;RTN#100m-Girls u/17;8
+202;FNH#Javelin-Girls u/15;6
+29;SFD#400m-Girls u/15;5
+4;RTN#Javelin-Girls u/15;2
+152;GFH#400m-Boys u/19;4
+131;EDB#Shot put-Girls u/19;2
+9;BRT#Javelin-Boys u/15;8
+50;FNH#200m-Boys u/15;8
+307;EDB#Shot put-Girls u/15;1
+197;SFD#200m-Boys u/17;3
+78;BPK#400m-Girls u/15;5
+253;SFD#200m-Girls u/17;4
+332;RTN#Long jump-Boys u/17;7
+155;EDB#Javelin-Girls u/15;4
+258;FNH#Shot put-Boys u/15;4
+312;GFH#Long jump-Girls u/17;3
+216;GFH#Javelin-Girls u/15;7
+76;RTN#200m-Boys u/15;4
+136;GFH#Shot put-Girls u/17;6
+93;SFD#400m-Girls u/19;4
+57;BRT#400m-Boys u/17;1
+139;EDB#Shot put-Boys u/17;5
+235;EDB#400m-Boys u/15;5
+272;GFH#Javelin-Girls u/19;2
+124;RTN#Shot put-Girls u/19;1
+47;BSL#200m-Boys u/17;4
+283;EDB#Javelin-Boys u/15;6
+331;EDB#200m-Girls u/15;8
+207;BSL#Javelin-Boys u/15;7
+104;GFH#Javelin-Girls u/19;2
+28;RTN#Javelin-Girls u/15;3
+22;BPK#400m-Girls u/15;2
+170;FNH#Long jump-Boys u/17;5
+304;GFH#Javelin-Girls u/19;8
+322;FNH#400m-Boys u/15;6
+156;RTN#Javelin-Boys u/17;2
+83;EDB#100m-Girls u/15;5
+226;FNH#Javelin-Girls u/15;2
+277;SFD#Shot put-Boys u/17;6
+214;BPK#Shot put-Boys u/17;8
+13;SFD#100m-Boys u/17;4
+121;BRT#200m-Girls u/17;7
+213;SFD#400m-Girls u/17;8
+320;GFH#Shot put-Girls u/15;4
+244;RTN#200m-Girls u/17;7
+257;BRT#400m-Boys u/17;3
+107;EDB#Shot put-Boys u/17;3
+208;GFH#Long jump-Boys u/17;5
+81;BRT#400m-Boys u/15;7
+142;BPK#Javelin-Boys u/17;1
+254;BPK#100m-Boys u/19;2
+178;FNH#400m-Boys u/17;5
+223;BSL#Javelin-Boys u/17;6
+169;BRT#Javelin-Girls u/15;7
+125;SFD#400m-Boys u/19;8
+92;RTN#Javelin-Boys u/15;6
+239;BSL#100m-Boys u/19;6
+146;FNH#200m-Boys u/17;7
+183;BSL#Javelin-Boys u/15;2
+246;BPK#Long jump-Boys u/17;6
+249;BRT#200m-Girls u/15;1
+8;GFH#Long jump-Boys u/15;3
+97;BRT#400m-Girls u/17;4
+282;FNH#Javelin-Girls u/15;6
+100;RTN#200m-Girls u/17;1
+333;SFD#Long jump-Girls u/17;4
+117;SFD#Javelin-Girls u/15;7
+73;BRT#400m-Girls u/17;4
+234;FNH#100m-Boys u/15;3
+305;BRT#Javelin-Girls u/15;7
+267;EDB#Long jump-Girls u/17;1
+168;GFH#400m-Boys u/15;7
+1;BRT#200m-Boys u/15;3
+95;BSL#400m-Girls u/15;5
+228;RTN#Javelin-Boys u/15;5
+54;BPK#Long jump-Boys u/17;1
+11;EDB#Javelin-Boys u/17;6
+33;BRT#400m-Boys u/15;2
+26;FNH#Javelin-Boys u/19;1
+134;BPK#400m-Boys u/17;1
+343;BSL#Long jump-Girls u/15;1
+310;BPK#100m-Boys u/17;1
+211;EDB#Long jump-Boys u/15;1
+346;FNH#Long jump-Girls u/17;3
+265;BRT#400m-Girls u/15;8
+238;BPK#Javelin-Girls u/17;3
+36;RTN#100m-Girls u/15;7
+212;RTN#400m-Boys u/15;2
+260;RTN#Shot put-Boys u/15;5
+105;BRT#100m-Boys u/17;1
+326;BPK#400m-Girls u/19;3
+37;SFD#Shot put-Girls u/17;7
+189;SFD#Javelin-Boys u/17;3
+192;GFH#400m-Boys u/17;7
+342;BPK#200m-Boys u/17;5
+248;GFH#Javelin-Boys u/17;4
+56;GFH#Shot put-Boys u/19;1
+21;SFD#Long jump-Boys u/15;3
+115;EDB#Shot put-Boys u/17;6
+242;FNH#400m-Boys u/17;2
+66;FNH#Javelin-Girls u/19;2
+339;EDB#Long jump-Boys u/15;3
+98;FNH#400m-Girls u/19;7
+187;EDB#Long jump-Boys u/19;1
+285;SFD#Javelin-Girls u/19;8
+337;BRT#100m-Boys u/15;8
+23;BSL#400m-Girls u/15;6
+336;GFH#Long jump-Boys u/17;4
+166;BPK#Long jump-Boys u/19;3
+243;EDB#400m-Girls u/17;4
+311;BSL#100m-Boys u/17;5
+308;RTN#Javelin-Boys u/17;7
+44;RTN#400m-Girls u/19;3
+126;BPK#Javelin-Girls u/19;8
+77;SFD#100m-Girls u/17;8
+6;BPK#400m-Girls u/15;3
+303;BSL#Shot put-Girls u/15;2
+290;FNH#200m-Boys u/15;3
+209;BRT#Javelin-Girls u/17;2
+295;BSL#Javelin-Girls u/19;6
+173;SFD#Shot put-Girls u/19;8
+291;EDB#Long jump-Boys u/15;4
+328;GFH#400m-Boys u/15;6
+255;BSL#Long jump-Boys u/15;1
+341;SFD#400m-Boys u/15;8
+62;BPK#Shot put-Girls u/19;1
+203;EDB#400m-Girls u/15;8
+252;RTN#Shot put-Girls u/19;8
+233;BRT#400m-Girls u/17;1
+219;EDB#Javelin-Boys u/17;2
+102;BPK#200m-Boys u/17;3
+273;BRT#Javelin-Girls u/15;7
+278;BPK#400m-Boys u/17;8
+137;BRT#Long jump-Girls u/17;3
+148;RTN#400m-Boys u/15;5
+317;SFD#Javelin-Girls u/15;1
+123;EDB#Shot put-Boys u/17;6
+279;BSL#Shot put-Girls u/15;1
+338;FNH#400m-Girls u/15;8
+12;RTN#100m-Boys u/17;3
+186;FNH#200m-Boys u/15;7
+135;BSL#Shot put-Boys u/15;1
+184;GFH#Javelin-Girls u/15;8
+335;BSL#Long jump-Boys u/15;4
+227;EDB#Shot put-Girls u/15;6
+84;RTN#400m-Boys u/19;4
+165;SFD#100m-Boys u/17;4
+20;RTN#100m-Girls u/17;7
+31;BSL#Long jump-Boys u/15;2
+3;EDB#400m-Boys u/19;4
+275;EDB#Javelin-Girls u/15;5
+45;SFD#Long jump-Boys u/15;5
+266;FNH#400m-Girls u/17;8
+205;SFD#Shot put-Boys u/19;8
+141;SFD#400m-Boys u/15;6
+94;BPK#Shot put-Girls u/17;6
+276;RTN#Long jump-Girls u/17;3
+325;SFD#Javelin-Boys u/15;3
+206;BPK#Shot put-Boys u/15;5
+88;GFH#400m-Boys u/17;7
+143;BSL#Javelin-Boys u/15;7
+140;RTN#Long jump-Boys u/15;3
+318;BPK#Javelin-Girls u/17;5
+225;BRT#400m-Girls u/15;6
+43;EDB#100m-Boys u/17;3
+347;EDB#Javelin-Boys u/19;2
+330;FNH#400m-Girls u/17;7
+176;GFH#200m-Girls u/17;3
+127;BSL#100m-Girls u/15;4
+17;BRT#Long jump-Girls u/17;3
+251;EDB#400m-Girls u/15;7
+345;BRT#100m-Boys u/15;6
+237;SFD#200m-Girls u/19;4
+271;BSL#Javelin-Boys u/19;3
+289;BRT#Long jump-Boys u/15;3
+194;FNH#Long jump-Girls u/19;4
+101;SFD#400m-Girls u/15;6
+35;EDB#Shot put-Girls u/19;3
+74;FNH#Javelin-Girls u/15;2
+196;RTN#400m-Girls u/15;5
+193;BRT#Shot put-Boys u/15;5
+268;RTN#Long jump-Girls u/15;1
+217;BRT#Javelin-Girls u/19;1
+90;FNH#400m-Boys u/17;5
+218;FNH#Long jump-Girls u/15;1
+39;BSL#Javelin-Girls u/15;3
+298;FNH#400m-Boys u/19;5
+284;RTN#200m-Boys u/17;5
+350;BRT#Javelin-Girls u/15;5
+190;BPK#400m-Boys u/17;6
+106;FNH#Javelin-Girls u/19;6
+221;SFD#100m-Girls u/15;5
+16;GFH#Long jump-Girls u/17;3
+162;FNH#400m-Girls u/15;6
+159;BSL#100m-Boys u/17;1
+150;BPK#Long jump-Boys u/15;5
+270;BPK#100m-Boys u/15;5
+314;FNH#400m-Boys u/17;2
+147;EDB#Long jump-Boys u/15;1
+80;GFH#100m-Girls u/15;3
+236;RTN#Shot put-Boys u/15;8
+263;BSL#400m-Girls u/19;4
+222;BPK#Long jump-Boys u/15;8
+129;BRT#Long jump-Girls u/15;8
+60;RTN#400m-Boys u/19;4
+297;BRT#Javelin-Boys u/17;1
+19;EDB#Shot put-Girls u/19;7
+32;GFH#400m-Girls u/15;4
+86;BPK#200m-Boys u/15;5
+241;BRT#Javelin-Girls u/15;7
+138;FNH#400m-Boys u/17;6
+313;BRT#100m-Girls u/19;5
+103;BSL#Javelin-Girls u/17;2
+38;BPK#100m-Boys u/17;1
+91;EDB#400m-Boys u/17;8
+323;EDB#Shot put-Boys u/17;7
+34;FNH#Long jump-Girls u/15;7
+85;SFD#400m-Boys u/15;5
+145;BRT#Javelin-Girls u/15;5
+64;GFH#Long jump-Boys u/15;6
+53;SFD#400m-Girls u/19;5
+149;SFD#Javelin-Girls u/19;8
+113;BRT#Shot put-Boys u/15;2
+286;BPK#400m-Boys u/15;5
+340;RTN#Javelin-Girls u/19;6
+201;BRT#400m-Boys u/17;7
+63;BSL#Long jump-Boys u/17;7
+296;GFH#Long jump-Girls u/17;2
+177;BRT#200m-Girls u/15;7
+171;EDB#200m-Boys u/17;6
+351;FNH#100m-Boys u/17;5
+174;BPK#Long jump-Girls u/15;3
+199;BSL#100m-Girls u/19;3
+301;SFD#400m-Boys u/17;3
+180;RTN#100m-Girls u/17;7
+256;GFH#Javelin-Boys u/19;1
+119;BSL#200m-Girls u/19;7
+89;BRT#400m-Boys u/17;2
+315;EDB#Javelin-Girls u/19;2
+18;FNH#Shot put-Girls u/17;5
+133;SFD#400m-Boys u/19;3
+262;BPK#Shot put-Boys u/17;2
+48;GFH#400m-Boys u/15;5
+110;BPK#Javelin-Girls u/15;1
+42;FNH#100m-Boys u/17;8
+15;BSL#Javelin-Girls u/19;8
+321;BRT#400m-Boys u/15;2
+41;BRT#Long jump-Boys u/17;3
+52;RTN#100m-Girls u/15;1
+49;BRT#200m-Boys u/19;2
+329;BRT#400m-Girls u/15;8
+182;BPK#100m-Girls u/17;7
+72;GFH#200m-Girls u/17;7
+157;SFD#400m-Boys u/15;3
+210;FNH#Long jump-Boys u/17;6
+132;RTN#400m-Boys u/17;8
+51;EDB#Shot put-Girls u/15;3
+99;EDB#Long jump-Girls u/15;5
+324;RTN#400m-Boys u/15;8
+293;SFD#Long jump-Girls u/17;7
+231;BSL#400m-Boys u/19;1
+163;EDB#Shot put-Girls u/15;8
+281;BRT#100m-Girls u/15;7
+55;BSL#Javelin-Boys u/15;7
+30;BPK#400m-Girls u/17;8
+116;RTN#Javelin-Boys u/19;6
+195;EDB#Long jump-Boys u/17;4
+224;GFH#200m-Girls u/19;7
+230;BPK#Shot put-Girls u/15;7
+46;BPK#100m-Girls u/17;7
+111;BSL#400m-Girls u/17;4
+250;FNH#Long jump-Boys u/17;7
+274;FNH#400m-Boys u/17;8
+306;FNH#200m-Boys u/15;6
+160;GFH#Shot put-Boys u/15;5
+261;SFD#Javelin-Girls u/17;3
+287;BSL#100m-Girls u/19;7

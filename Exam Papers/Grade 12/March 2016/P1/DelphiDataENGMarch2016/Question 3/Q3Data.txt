@@ -1,0 +1,21 @@
+Ugie;Maclear#25*No
+Elliot;Cala#28*Yes
+Queenstown;Whittlesea#32*Yes
+Whittlesea;Cathcart#46*No
+Cathcart;Hogsback#49*Yes
+Elliot;Ugie#51*Yes
+Queenstown;Cathcart#59*No
+Barkly East;Rhodes#60*No
+Barkly East;Elliot#63*Yes
+Tarkastad;Hofmeyer#65*No
+Queenstown;Tarkastad#66*No
+Cradock;Hofmeyr#68*No
+Dortrecht;Queenstown#72*Yes
+Dortrecht;Molteno#72*Yes
+Barkly East;Lady Grey#73*No
+Jamestown;Lady Grey#73*No
+Cradock;Tarkastad#80*No
+Eliot;Rhodes#98*No
+Dortrecht;Lady Grey#101*No
+Queenstown;Jamestown#109*No
+

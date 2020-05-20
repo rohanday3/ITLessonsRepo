@@ -1,0 +1,20 @@
+JAVA:
+====
+ 
+ARRAYS DECLARATION AND INITIALISATION:
+======================================
+
+String[] arrData = 
+	{"Civilisation#PS3",	"Command & Conquer#PC",	"Solitaire#Xbox",
+					"Chess#PC",	"Tetris#PC", "Chess#PC", "Command & Conquer#PC",
+					"Civilisation#PC", "SimCity#PC",	"Tetris#PC", "SimCity#PC",		
+					"Civilisation#PS3", "Tetris#PS3", "Command & Conquer#PS3",
+					"SimCity#PC", "Solitaire#PC",	"Sims#Xbox", "SimCity#Xbox",
+					"Command & Conquer#PC",	"Chess#PS3", "Tetris#Xbox",
+					"Civilisation#Xbox",	"SimCity#PS3",	"Solitaire#PC","Sims#Xbox",
+					"Command & Conquer#PS3", "Command & Conquer#PS3", "Civilisation#PS3",
+					"Civilisation#PS3", "Command & Conquer#Xbox", "SimCity#PS3",
+					"Solitaire#PS3", "Civilisation#Xbox", "Command & Conquer#PC",
+					"SimCity#PC"};
+
+

@@ -1,0 +1,53 @@
+unit Sentences_U;
+
+interface
+
+uses
+  Windows, Messages, SysUtils, Variants, Classes, Graphics, Controls, Forms,
+  Dialogs, StdCtrls, ExtCtrls;
+
+type
+  TForm5 = class(TForm)
+    Panel1: TPanel;
+    btnRemove: TButton;
+    btnFirst5: TButton;
+    btnlast2: TButton;
+    Label1: TLabel;
+    edtSentence: TEdit;
+    edtRemove: TEdit;
+    edtFirst5: TEdit;
+    edtLast2: TEdit;
+    procedure btnRemoveClick(Sender: TObject);
+    procedure btnFirst5Click(Sender: TObject);
+  private
+    { Private declarations }
+  public
+    { Public declarations }
+  end;
+
+var
+  Form5: TForm5;
+  sSentence : string;
+
+implementation
+
+{$R *.dfm}
+
+procedure TForm5.btnFirst5Click(Sender: TObject);
+var
+ sFirst5:string;
+
+begin
+
+end;
+
+procedure TForm5.btnRemoveClick(Sender: TObject);
+var
+sRemoveTrailingLeadingSpaces : string;
+begin
+   sSentence := edtSentence.Text;
+   sRemoveTrailingLeadingSpaces := trim(sSentence);
+   edtRemove.Text := sRemoveTrailingLeadingSpaces;
+end;
+
+end.

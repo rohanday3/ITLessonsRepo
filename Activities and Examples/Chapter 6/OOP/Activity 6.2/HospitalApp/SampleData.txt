@@ -1,0 +1,131 @@
+McJaG Life Hospital*Public
+2014/01/03#Quinnay Thomas#F#Sinusitus#39040.89
+2014/01/12#Barbin Smag#M#Depression#12883.43
+2014/01/16#Miranda Adkins#F#Routine CheckUp#11716.54
+2014/02/09#Joan Casey#F#Migraine#8899.39
+2014/02/10#Abdul Tanner#M#Hypertension#38611.16
+2014/02/15#Beatrick Brock#M#Angina#35141.93
+2014/03/07#Carly Martinez#F#Asthma#16353.26
+2014/03/21#Amena Baldwin#F#Coronary Heart#19595.09
+2014/04/08#Johanna Boyle#F#Pericardial disease#8512.41
+2014/04/09#Nitai Short#M#Asthma#34313.06
+2014/04/15#Deanna Carpenter#F#Parkinsons#45185.54
+2014/04/19#Griff Wolf#M#Intraocular Melanoma#31636.16
+2014/04/30#Georgie Lowe#M#Routine CheckUp#15943.29
+2014/05/02#Alfonso Harrington#M#Coronary Heart#4187.82
+2014/05/03#Oren Fuentes#M#Routine CheckUp#25819.18
+2014/05/06#Tar Church#M#Stroke#16483.84
+2014/05/09#Dexter Caldwell#M#Hypertension#9489.95
+2014/05/16#Teagan Levy#M#Parkinsons#26459.87
+2014/05/26#Theodora Tanner#F#Migraine#9532.5
+2014/06/17#Elmo Fuentes#M#Pericardial disease#35147.19
+2014/06/19#Maris Shannon#M#Stroke#12851.96
+2014/07/17#Barline Compton#F#Routine CheckUp#9757.19
+2014/07/20#Gay Howard#F#Carcinoid tumor#27369.54
+2014/07/22#Brendin Riley#M#Sinusitus#39716.16
+2014/07/27#Petra Clemons#F#Coronary Heart#36765.18
+2014/07/27#Lyno Chen#M#Leukemia#21316.01
+2014/08/01#Deana Farley#F#Stroke#34368.67
+2014/08/07#Jana Ryan#F#Parkinsons#47531.71
+2014/08/09#Lest Wilson#F#Carcinoid tumor#36220.17
+2014/08/14#Thane Clay#M#Intraocular Melanoma#26137.75
+2014/08/18#Kibo Figueroa#M#Angina#48149.03
+2014/08/18#Samson Adkins#M#Asthma#13850.87
+2014/08/22#Gemm Buck#M#Coronary Heart#13481.1
+2014/08/29#Elijah Todd#F#Routine CheckUp#6697.77
+2014/09/05#Xenos Hayden#M#Intraocular Melanoma#2774.95
+2014/09/07#Aspen Estes#F#Carcinoid tumor#18377.25
+2014/09/12#Quinn Rosario#M#Depression#2167.54
+2014/09/22#Isadora Baldwin#F#Migraine#30668.14
+2014/09/27#Raven Lane#M#Depression#5285.06
+2014/10/08#Quynn Pruitt#M#Parkinsons#49245.01
+2014/10/10#Alfonso Strong#M#Parkinsons#26429.13
+2014/10/15#Xanda Carpenter#F#Angina#41923.77
+2014/11/03#Wylie Rowe#M#Hypertension#8884.73
+2014/11/07#Lev Griffin#M#Pericardial disease#14743.51
+2014/11/13#Karl Anthony#M#Cardiomyopathy#47721.56
+2014/12/01#Quint Powell#M#Depression#32767.02
+2014/12/17#Alana Randolph#F#Asthma#6713.02
+2014/12/17#Kitran Lang#M#Asthma#49866.02
+2014/12/18#Curran Browning#M#Migraine#18355.67
+2014/12/20#Fletcher Mooney#M#Carcinoid tumor#18703.42
+2012/01/10#Oleg Odonnell#F#Intraocular Melanoma#4038.38
+2012/01/13#Alice Hunt#F#Routine CheckUp#6888.29
+2012/01/23#Brock White#M#Cardiomyopathy#19398.64
+2012/01/25#Audrey Cochran#M#Intraocular Melanoma#12511.93
+2012/01/27#Roanna Ayers#F#Leukemia#16760.57
+2012/01/27#Beat Franco#M#Parkinsons#42930.78
+2012/02/05#Conana Allen#F#Depression#9108.25
+2012/02/14#Clay Kelley#F#Stroke#13236.98
+2012/02/18#Tate Wright#M#Depression#37809.13
+2012/02/24#Cullen Bird#M#Asthma#38367.57
+2012/03/02#Hanna Mcclain#F#Hypertension#24774.84
+2012/03/03#Fuller French#M#Coronary Heart#6237.26
+2012/03/07#Gil Rosales#M#Carcinoid tumor#39189.48
+2012/03/16#Quemby Carrillo#F#Carcinoid tumor#8145.82
+2012/03/24#Imogene Carter#F#Leukemia#26746.61
+2012/03/24#Duran Cline#M#Angina#26344.07
+2012/04/01#Evens Dillon#M#Intraocular Melanoma#18450.06
+2012/04/01#Colette Chase#F#Leukemia#30141.01
+2012/04/17#Ria Leonard#F#Coronary Heart#24553.9
+2012/05/06#Zen Rivers#M#Intraocular Melanoma#9876.29
+2012/05/13#Tamara Whitaker#F#Leukemia#14751.27
+2012/05/20#Emile Rose#M#Cardiomyopathy#28672.45
+2012/05/25#Will Shields#M#Routine CheckUp#6921.63
+2012/05/31#Duncan Jensen#F#Routine CheckUp#16012.4
+2012/06/06#Yuli Murray#M#Asthma#2737.39
+2012/06/07#Oleg Kennedy#F#Parkinsons#24317.15
+2012/06/10#Neville David#M#Stroke#46168.92
+2012/06/14#Kamla George#F#Migraine#49959.79
+2012/06/27#Anthony Church#M#Leukemia#48063.69
+2012/07/17#Heath Rogers#M#Carcinoid tumor#28711.82
+2012/08/01#Abigail Leach#F#Asthma#38393.81
+2012/08/04#Larsa Black#F#Depression#16181.51
+2012/08/10#Maxine Gilliam#F#Asthma#39673.27
+2012/08/11#Jenan Arnold#M#Depression#6762.77
+2012/08/14#May Noble#F#Leukemia#8577.2
+2012/08/21#Camini Rivas#F#Carcinoid tumor#35178.49
+2012/08/22#Brandon Medina#M#Pericardial disease#30843.83
+2012/08/28#Dahlia Donovan#F#Migraine#13609.02
+2012/08/30#Wallace Castro#M#Hypertension#17740.67
+2012/09/06#Ria Cash#F#Intraocular Melanoma#9375.73
+2012/09/11#Amos Rocha#M#Stroke#25347.06
+2012/09/11#Amanda Knowles#F#Leukemia#17496.06
+2012/09/24#Brenda Summers#F#Cardiac Arrest#14793.27
+2012/10/17#Nissim Reid#F#Routine CheckUp#27364.45
+2012/10/21#Igora Gardner#F#Cardiomyopathy#3910.97
+2012/11/12#Lyle Weiss#M#Asthma#2841.6
+2012/11/13#Larein Douglas#M#Pericardial disease#15036.97
+2012/11/17#Tallulah Fox#F#Coronary Heart#8416.86
+2012/11/29#Forrest Smith#M#Depression#43607.55
+2012/12/02#Ian King#M#Leukemia#43919.32
+2012/12/21#Stephan Roth#M#Migraine#11472.25
+2012/12/23#Elmo Guzman#F#Depression#22385.38
+2013/01/01#Lael Key#M#Hypertension#19258.96
+2013/01/05#Kail Morton#M#Depression#2530.84
+2013/02/20#Blaze Mccullough#F#Depression#38500.35
+2013/02/21#Dawn Hicks#M#Stroke#48833.69
+2013/03/01#Brynne Wilder#M#Leukemia#37717.6
+2013/03/13#Jorden Atkins#M#Cardiomyopathy#24620.37
+2013/03/30#Carl Cross#M#Routine CheckUp#11702.46
+2013/04/04#Nadine Raymond#F#Cardiomyopathy#34646.68
+2013/04/12#Whinn West#M#Depression#21846.86
+2013/04/14#Jesse Lucas#F#Cardiac Arrest#23057.59
+2013/04/25#Ether Mclaughlin#F#Cardiomyopathy#6204.38
+2013/04/27#Cruz Lopez#M#Cardiac Arrest#34708.44
+2013/05/19#Sammy Cooley#F#Intraocular Melanoma#14925.92
+2013/05/19#Reuben Gibson#M#Depression#29032.32
+2013/05/31#Dola Fischer#F#Hypertension#47114.14
+2013/06/20#Dalton Daugherty#M#Angina#20254.06
+2013/06/24#Merrill Knight#F#Depression#12094.31
+2013/06/24#Jade Puckett#F#Routine CheckUp#49955.55
+2013/06/29#Mary Gordon#F#Routine CheckUp#36227.72
+2013/07/04#Abraham Bernard#M#Angina#45840.53
+2013/07/17#Thomas Barker#M#Migraine#4390.72
+2013/07/17#Shell Reilly#M#Angina#37908.36
+2013/07/19#Indiran Hodge#M#Migraine#38877.35
+2013/08/16#Illian Bryan#M#Routine CheckUp#23644.37
+2013/08/23#Ursulan Walton#M#Migraine#40628.23
+2013/08/26#Cor Pacheco#M#Asthma#19538.46
+2013/09/06#Geoffrey Hays#M#Leukemia#36324.73
+2013/09/07#Rebecca Kaufman#F#Angina#29450.12

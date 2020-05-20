@@ -1,0 +1,159 @@
+unit Question3_U;
+
+interface
+
+uses
+  Windows, Messages, SysUtils, Variants, Classes, Graphics, Controls, Forms,
+  Dialogs, StdCtrls, ComCtrls;
+
+type
+  TForm1 = class(TForm)
+    GroupBox1: TGroupBox;
+    lblAgentName: TLabel;
+    edtCode: TEdit;
+    btnSearch: TButton;
+    btnSales: TButton;
+    GroupBox2: TGroupBox;
+    lblAgentSales: TLabel;
+    Label2: TLabel;
+    redQ3: TRichEdit;
+    procedure btnSearchClick(Sender: TObject);
+    procedure btnSalesClick(Sender: TObject);
+  private
+    { Private declarations }
+  public
+    { Public declarations }
+  end;
+
+var
+  Form1: TForm1;
+
+    arrAgents:array[1..6] of string =('A120:Wes Seelig',
+        'A121:Tandra Peters',
+        'A122:Lisha Champ',
+        'A123:Melda Bissonette',
+        'A124:Leta Hansell',
+        'A125:Sid Rebello');
+
+    // arrays that may be used for output - not required to use.
+    arrTypes : array[1..3] of String  =('Commercial', 'Residential', 'Farmland  ');
+    arrMonths : array [1..12] of string = ('Jan', 'Feb', 'Mar', 'Apr','May','Jun','Jul','Aug','Sep','Oct','Nov','Dec');
+
+    arrSales:array[1..3,1..13] of Integer;
+
+     sAgentname, sAgentCode: string;
+     bFound:Boolean;
+
+
+implementation
+
+{$R *.dfm}
+
+procedure TForm1.btnSearchClick(Sender: TObject);
+var
+      indx, iErr: Integer;
+
+begin
+  // Qst 3.1
+
+  redQ3.Lines.Clear;
+  sAgentCode := edtCode.Text;
+  indx := 1;
+  bFound:=False;
+  while not bFound and (indx <=Length(arrAgents))  do
+  begin
+   if sAgentCode = Copy(arrAgents[indx],1,4)
+   then
+     begin
+      sAgentname := Copy(arrAgents[indx], Pos(':',arrAgents[indx])+1, Length(arrAgents[indx]));
+      lblAgentname.Caption := sAgentname;
+      bFound:=True;
+     end;
+   indx := indx + 1;
+  end;
+
+  if (not bFound)
+  then
+  begin
+    lblAgentName.Caption:= 'Invalid agent code';
+    edtCode.Text :='';
+  end;
+end;
+
+
+procedure TForm1.btnSalesClick(Sender: TObject);
+var
+  sSale: string;
+  iRow, iCol, iTotalSales, i, j: Integer;
+  sPropType, sPrice, sMonths, sSales: string;
+  salesFile: TextFile;
+
+begin
+  // Qst 3.
+
+  redQ3.Lines.Clear;
+       for i:= 1 to 3 do
+       begin
+         for j := 1 to 13 do
+         begin
+            arrSales[i][j]:=0;
+         end;
+
+       end;
+
+
+  if(Length(sAgentname) > 0) then
+  begin
+    iTotalSales:=0;
+    AssignFile(salesFile,'sales.txt');
+    Reset(salesFile);
+    while not Eof(salesFile) do
+    begin
+      Readln(salesFile, sSale);
+      if(Copy(sSale,6,4) = sAgentCode) then
+      begin
+       iCol := StrToInt(Copy(sSale,1,2));
+
+        sPropType := Copy(sSale,4,1);
+        if(sPropType = 'C') then iRow :=1;
+        if(sPropType = 'R') then iRow :=2;
+        if(sPropType = 'F') then iRow :=3;
+
+        arrSales[iRow][iCol] := arrSales[iRow][iCol] +1;
+        arrSales[iRow][13] := arrSales[iRow][13] +1;
+
+         sPrice :=  Copy(sSale, Pos(';',sSale)+1, Length(sSale));
+         iTotalSales := iTotalSales + StrToInt(sPrice);
+
+      end;
+    end;
+
+      redQ3.Lines.Add(' '+#9);
+      for i:= 1 to 12 do
+      begin
+        sMonths := sMonths+ #9+ arrMonths[i];
+      end;
+
+      redQ3.Lines.Clear;
+      redQ3.Lines.Add(' '+#9+ sMonths);
+      redQ3.Lines.Add(#13);
+
+       for i := 1 to 3 do
+         begin
+               sSales:='';
+                for j := 1 to 13 do
+                     sSales := sSales+#9+ IntToStr(arrSales[i][j]);
+                redQ3.Lines.Add(arrTypes[i]+' '+sSales);
+                redQ3.Lines.Add(#13);
+         end;
+            lblAgentSales.Caption:=('The total of sales is: R ' + IntToStr(iTotalSales));
+       CloseFile(salesFile);
+      end
+      else
+      begin
+         redQ3.Lines.Add('Please enter a valid agent code');
+    end;
+
+end;
+
+end.

@@ -1,0 +1,204 @@
+//4161810090128
+
+unit Question1_U;
+
+interface
+
+uses
+  Windows, Messages, SysUtils, Variants, Classes, Graphics, Controls, Forms,
+  Dialogs, StdCtrls, ExtCtrls, ComCtrls, Spin, DateUtils;
+
+type
+  TfrmQuestion1 = class(TForm)
+    Panel1: TPanel;
+    Panel2: TPanel;
+    GroupBox1: TGroupBox;
+    Label1: TLabel;
+    Label2: TLabel;
+    Label3: TLabel;
+    edtLength: TEdit;
+    edtWidth: TEdit;
+    edtHeight: TEdit;
+    btnQues11: TButton;
+    edtVolume: TEdit;
+    GroupBox2: TGroupBox;
+    btnQues12: TButton;
+    edtCost: TEdit;
+    GroupBox3: TGroupBox;
+    btnQues13: TButton;
+    Label4: TLabel;
+    edtQues13: TEdit;
+    GroupBox4: TGroupBox;
+    btnQues14: TButton;
+    redQues14: TRichEdit;
+    GroupBox5: TGroupBox;
+    btnQues151: TButton;
+    redQues15: TRichEdit;
+    rgpPrizes: TRadioGroup;
+    Label5: TLabel;
+    Label6: TLabel;
+    Label7: TLabel;
+    edtLifespan: TEdit;
+    lblVolume: TLabel;
+    Label8: TLabel;
+    Label9: TLabel;
+    edtInitialCost: TEdit;
+    edtIncome: TEdit;
+    btnQues152: TButton;
+    procedure btnQues11Click(Sender: TObject);
+    procedure btnQues12Click(Sender: TObject);
+    procedure btnQues13Click(Sender: TObject);
+    procedure btnQues14Click(Sender: TObject);
+    procedure btnQues151Click(Sender: TObject);
+    procedure FormActivate(Sender: TObject);
+    procedure btnQues152Click(Sender: TObject);
+    procedure FormCreate(Sender: TObject);
+  private
+    { Private declarations }
+  public
+    { Public declarations }
+  end;
+
+var
+  frmQuestion1: TfrmQuestion1;
+   rtotal : real;
+
+implementation
+
+{$R *.dfm}
+
+procedure TfrmQuestion1.btnQues11Click(Sender: TObject);
+var
+rlength , rWidth,rheight : real;
+begin
+  //Question 1.1
+  rTotal :=0;
+rLength :=strtoFloat(edtlength.text);
+rWidth :=strtoFloat(edtwidth.text);
+rHeight := strtoFloat(edtheight.text);
+rTotal := rlength * rWidth * rHeight;
+edtvolume.Text:= FloatToStrF(rtotal,ffFixed,8,2);
+
+end;
+
+procedure TfrmQuestion1.btnQues12Click(Sender: TObject);
+var
+  rCost : real;
+begin
+ //Question 1.2
+rCost :=0;
+
+ //if rTotal >= 800 then
+  //begin
+   rCost := 500 * 0.25;
+   rCost := rCost + (300 * 0.35);
+   rCost := rCost + ((rTotal - 800) * 0.45);
+  //end;
+
+ edtCost.text := FloattostrF(rCost,ffcurrency,6,2);
+
+end;
+
+procedure TfrmQuestion1.btnQues13Click(Sender: TObject);
+var
+ iLife, imonth,iyear : integer;
+begin
+ //Question 1.3
+ imonth :=0;
+ iyear:=0;
+
+ iLife := strToInt(edtlifespan.Text);
+ iyear := trunc(ilife/12);
+ imonth := iLife MOD 12;
+
+ edtques13.text := inttostr(iyear) + ' years and ' + inttostr(imonth) + ' months';
+end;
+
+procedure TfrmQuestion1.btnQues14Click(Sender: TObject);
+var
+rCost, rincome, rbalance : real;
+iCount : integer;
+begin
+ //Question 1.4
+ iCount :=1;
+rCost := strtofloat(edtinitialcost.Text);
+rIncome := strtofloat(edtincome.Text);
+ rbalance :=rCost - rIncome;
+
+redques14.Lines.Add('Year' + #9 + 'Income' + #9#9 + 'Balance');
+redques14.Lines.Add(inttostr(ICount) + #9 + floattostrf(rIncome,ffCurrency,8,2) + #9#9 + floattostrf(rbalance,ffCurrency,8,2));
+while rBalance > rIncome  do
+  begin
+    inc(iCount);
+    rIncome := rIncome * 110/100;
+    rBalance := rbalance - rincome;
+    redques14.Lines.Add(inttostr(ICount) + #9 + floattostrf(rIncome,ffCurrency,8,2) + #9#9 + floattostrf(rbalance,ffCurrency,8,2));
+  end;
+  rIncome := rIncome * 110/100;
+ redques14.lines.add(inttostr(ICount) + #9 + floattostrf(rIncome,ffCurrency,8,2) + #9#9 + 'Paid off');
+
+
+end;
+
+procedure TfrmQuestion1.btnQues151Click(Sender: TObject);
+var
+iNum1 , iNum2 : integer;
+begin
+ //Question 1.5.1
+ redques15.Clear;
+ rgpPrizes.enabled := false;
+ btnques152.Enabled :=false;
+
+ inum1:= random(5)+1;
+ inum2:= random(5)+1;
+
+ redques15.Lines.Add('Dice 1 = ' + intToStr(iNum1));
+ redques15.Lines.Add('Dice 2 = ' + intToStr(iNum2));
+
+ if iNum1 - iNum2 = 1  then
+  begin
+    rgpPrizes.enabled := true;
+    btnques152.Enabled:= true;
+  end;
+
+  if (iNum1 - iNum2 = -1) then
+   begin
+    rgpPrizes.enabled:= true;
+    btnques152.Enabled := true;
+  end;
+
+end;
+
+procedure TfrmQuestion1.btnQues152Click(Sender: TObject);
+var
+ sNum : string;
+ sdate,sCourse, sRef : string;
+begin
+ //Question 1.5.2
+ //sNum :=MessageDlg('Enter ticket number',mtInformation,[mbOk],'');
+ sNum := inputbox('Enter Ticket number','Please enter your 4 digit ticket number','');
+ sDate := DateTostr(date);
+
+ if rgpPrizes.ItemIndex = 0 then
+  sCourse := 'SW';
+ if rgpPrizes.ItemIndex = 1 then
+  sCourse := 'SN';
+
+  sRef := sNum + '#' + sDate + '#' + sCourse;
+ redques15.Lines.Add('Reference number: ' + #13 + sRef );
+
+end;
+
+procedure TfrmQuestion1.FormActivate(Sender: TObject);
+begin
+  CurrencyString := 'R';
+  btnQues152.Enabled := false;
+  rgpPrizes.Enabled := false;
+end;
+
+procedure TfrmQuestion1.FormCreate(Sender: TObject);
+begin
+randomize;
+end;
+
+end.

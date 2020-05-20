@@ -1,0 +1,15 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<BorlandProject>
+	<Transactions>
+    <Transaction>2015/10/08 03:55:49.501.pas,C:\Users\pc6\Documents\RAD Studio\Projects\Unit5.pas=C:\Users\pc6\Desktop\Delphi Projects\Tutorial\Tutorial_U.pas</Transaction>
+    <Transaction>2015/10/08 03:55:49.501.dfm,C:\Users\pc6\Documents\RAD Studio\Projects\Unit5.dfm=C:\Users\pc6\Desktop\Delphi Projects\Tutorial\Tutorial_U.dfm</Transaction>
+    <Transaction>2015/10/08 03:55:59.303.dproj,C:\Users\pc6\Documents\RAD Studio\Projects\Project2.dproj=C:\Users\pc6\Desktop\Delphi Projects\Tutorial\Tutorial_P.dproj</Transaction>
+    <Transaction>2015/10/08 04:56:17.849.pas,C:\Users\pc6\Desktop\Delphi Projects\Tutorial\Tutorial_U.pas=C:\Users\pc6\Documents\Delphi Projects\Tutorial1\Tutorial_U.pas</Transaction>
+    <Transaction>2015/10/08 04:56:17.849.dfm,C:\Users\pc6\Desktop\Delphi Projects\Tutorial\Tutorial_U.dfm=C:\Users\pc6\Documents\Delphi Projects\Tutorial1\Tutorial_U.dfm</Transaction>
+    <Transaction>2015/10/08 05:02:11.734.pas,C:\Users\pc6\Documents\Delphi Projects\Tutorial1\Tutorial_U.pas=C:\Users\pc6\Documents\Delphi Projects\Tutorial1\Tutorial1_U.pas</Transaction>
+    <Transaction>2015/10/08 05:02:11.734.dfm,C:\Users\pc6\Documents\Delphi Projects\Tutorial1\Tutorial_U.dfm=C:\Users\pc6\Documents\Delphi Projects\Tutorial1\Tutorial1_U.dfm</Transaction>
+    <Transaction>2015/10/08 05:07:08.427.dproj,C:\Users\pc6\Desktop\Delphi Projects\Tutorial\Tutorial_P.dproj=C:\Users\pc6\Desktop\Delphi Projects\Tutorial\Tutorial1_P.dproj</Transaction>
+    <Transaction>2015/10/08 05:22:52.181.dproj,C:\Users\pc6\Desktop\Delphi Projects\Tutorial\Tutorial1_P.dproj=C:\Users\pc6\Desktop\Delphi Projects\Tutorial\Tutorial1_P.dproj</Transaction>
+    <Transaction>2015/10/11 21:12:36.012.dproj,C:\Users\pc6\Desktop\Delphi Projects\Tutorial\Tutorial1_P.dproj=C:\Users\pc6\Desktop\Delphi Projects\Tutorial\Tutorial1_P.dproj</Transaction>
+  </Transactions>
+</BorlandProject>

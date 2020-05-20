@@ -1,0 +1,41 @@
+unit Sum_U;
+
+interface
+
+uses
+  Windows, Messages, SysUtils, Variants, Classes, Graphics, Controls, Forms,
+  Dialogs, StdCtrls, ComCtrls, ExtCtrls;
+
+type
+  TForm5 = class(TForm)
+    Panel1: TPanel;
+    btnSum: TButton;
+    redOutput: TRichEdit;
+    procedure btnSumClick(Sender: TObject);
+  private
+    { Private declarations }
+  public
+    { Public declarations }
+  end;
+
+var
+  Form5: TForm5;
+
+implementation
+
+{$R *.dfm}
+
+procedure TForm5.btnSumClick(Sender: TObject);
+var
+  iNumber, iSum: integer;
+  I: integer;
+begin
+  for I := 1 to 5 do
+  begin
+    iNumber := StrToInt(InputBox('Number input', 'Enter a number', '0'));
+    redOutput.Lines.Add(intToStr(iNumber));
+    iSum    := iSum + iNumber;
+  end;
+  redOutput.Lines.Add('The sum is:'+IntToStr(iSum));
+end;
+end.

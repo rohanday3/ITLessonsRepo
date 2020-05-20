@@ -1,0 +1,114 @@
+object frmQ3: TfrmQ3
+  Left = 334
+  Top = 149
+  Caption = 'Question3'
+  ClientHeight = 547
+  ClientWidth = 615
+  Color = clBtnFace
+  Font.Charset = DEFAULT_CHARSET
+  Font.Color = clWindowText
+  Font.Height = -11
+  Font.Name = 'Tahoma'
+  Font.Style = []
+  OldCreateOrder = False
+  DesignSize = (
+    615
+    547)
+  PixelsPerInch = 96
+  TextHeight = 13
+  object grpSalesDetail: TGroupBox
+    Left = 0
+    Top = 0
+    Width = 615
+    Height = 159
+    Align = alTop
+    Caption = 'Agent'#39's sales details'
+    Color = clBtnFace
+    Ctl3D = False
+    Font.Charset = DEFAULT_CHARSET
+    Font.Color = clWindowText
+    Font.Height = -13
+    Font.Name = 'Tahoma'
+    Font.Style = []
+    ParentColor = False
+    ParentCtl3D = False
+    ParentFont = False
+    TabOrder = 0
+    ExplicitLeft = 10
+    ExplicitTop = 15
+    ExplicitWidth = 599
+    object lblAgentName: TLabel
+      Left = 24
+      Top = 128
+      Width = 4
+      Height = 16
+      Font.Charset = DEFAULT_CHARSET
+      Font.Color = clWindowText
+      Font.Height = -13
+      Font.Name = 'Tahoma'
+      Font.Style = [fsBold]
+      ParentFont = False
+    end
+    object lblAgentCode: TLabel
+      Left = 27
+      Top = 40
+      Width = 106
+      Height = 16
+      Caption = 'Enter agent'#39's code'
+    end
+    object edtCode: TEdit
+      Left = 27
+      Top = 66
+      Width = 201
+      Height = 22
+      TabOrder = 0
+    end
+    object btnAgentsName: TButton
+      Left = 277
+      Top = 48
+      Width = 177
+      Height = 41
+      Caption = 'Find agent'#39's name'
+      TabOrder = 1
+      OnClick = btnAgentsNameClick
+    end
+    object btnAgentsSalesRecord: TButton
+      Left = 278
+      Top = 104
+      Width = 177
+      Height = 40
+      Caption = 'Agent'#39's sales record'
+      TabOrder = 2
+      OnClick = btnAgentsSalesRecordClick
+    end
+  end
+  object grpDisplay: TGroupBox
+    Left = 0
+    Top = 159
+    Width = 615
+    Height = 314
+    Align = alTop
+    Caption = 'Display area'
+    Ctl3D = False
+    Font.Charset = DEFAULT_CHARSET
+    Font.Color = clWindowText
+    Font.Height = -13
+    Font.Name = 'Tahoma'
+    Font.Style = []
+    ParentCtl3D = False
+    ParentFont = False
+    TabOrder = 1
+    ExplicitWidth = 621
+  end
+  object bmbClose: TBitBtn
+    Left = 512
+    Top = 504
+    Width = 89
+    Height = 33
+    Anchors = [akRight, akBottom]
+    DoubleBuffered = True
+    Kind = bkClose
+    ParentDoubleBuffered = False
+    TabOrder = 2
+  end
+end

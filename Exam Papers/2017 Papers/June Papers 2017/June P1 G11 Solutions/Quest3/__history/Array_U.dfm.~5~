@@ -1,0 +1,101 @@
+object Form1: TForm1
+  Left = 0
+  Top = 0
+  Caption = 'June Exam G11 Question 3'
+  ClientHeight = 350
+  ClientWidth = 618
+  Color = clActiveCaption
+  Font.Charset = ANSI_CHARSET
+  Font.Color = clPurple
+  Font.Height = -13
+  Font.Name = 'Segoe Print'
+  Font.Style = [fsBold]
+  OldCreateOrder = False
+  PixelsPerInch = 96
+  TextHeight = 23
+  object Label1: TLabel
+    Left = 48
+    Top = 8
+    Width = 42
+    Height = 23
+    Caption = 'Wards'
+  end
+  object redDisplay: TRichEdit
+    Left = 327
+    Top = 8
+    Width = 265
+    Height = 313
+    Font.Charset = ANSI_CHARSET
+    Font.Color = clWindowText
+    Font.Height = -11
+    Font.Name = 'Tahoma'
+    Font.Style = []
+    Lines.Strings = (
+      '')
+    ParentFont = False
+    TabOrder = 0
+    Zoom = 100
+  end
+  object lst1: TListBox
+    Left = 16
+    Top = 34
+    Width = 121
+    Height = 169
+    Font.Charset = ANSI_CHARSET
+    Font.Color = clNavy
+    Font.Height = -13
+    Font.Name = 'Lucida Bright'
+    Font.Style = [fsBold]
+    ItemHeight = 15
+    ParentFont = False
+    TabOrder = 1
+  end
+  object Button1: TButton
+    Left = 184
+    Top = 24
+    Width = 113
+    Height = 25
+    Caption = 'Generate Data'
+    TabOrder = 2
+  end
+  object Button2: TButton
+    Left = 184
+    Top = 72
+    Width = 113
+    Height = 25
+    Caption = 'Display Data'
+    TabOrder = 3
+  end
+  object Button3: TButton
+    Left = 184
+    Top = 120
+    Width = 113
+    Height = 25
+    Caption = 'Exceed 30000'
+    TabOrder = 4
+  end
+  object Button4: TButton
+    Left = 184
+    Top = 168
+    Width = 113
+    Height = 25
+    Caption = 'Highest Revenue'
+    TabOrder = 5
+  end
+  object Button5: TButton
+    Left = 184
+    Top = 216
+    Width = 113
+    Height = 25
+    Caption = 'Average Rates'
+    TabOrder = 6
+  end
+  object Button6: TButton
+    Left = 184
+    Top = 264
+    Width = 113
+    Height = 25
+    Caption = 'Revenue'
+    TabOrder = 7
+  end
+end

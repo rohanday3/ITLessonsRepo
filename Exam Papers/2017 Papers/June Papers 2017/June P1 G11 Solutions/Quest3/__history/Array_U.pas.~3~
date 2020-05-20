@@ -1,0 +1,35 @@
+unit Array_U;
+
+interface
+
+uses
+  Windows, Messages, SysUtils, Variants, Classes, Graphics, Controls, Forms,
+  Dialogs, StdCtrls, ComCtrls;
+
+type
+  TForm1 = class(TForm)
+    redDisplay: TRichEdit;
+    lst1: TListBox;
+    Label1: TLabel;
+    Button1: TButton;
+    Button2: TButton;
+    Button3: TButton;
+    Button4: TButton;
+    Button5: TButton;
+    Button6: TButton;
+  private
+    { Private declarations }
+  public
+    { Public declarations }
+  end;
+
+var
+  Form1: TForm1;
+  arrWard : array[1..12] of string= ('Parkly','Moses Gardens','Selby','Manchester','Umkuti','Bartlet','Delphine','Rhineburg','Pittsmead','Prince Jali','Xabu','Umkhontho');
+  arrRates : array[1..12] of real =(234.65,456.87,875.23,943.12,654.92,562.00,234.87,342.11,765.92,113.98,865.23,438.43);
+
+implementation
+
+{$R *.dfm}
+
+end.

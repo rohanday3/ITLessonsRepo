@@ -1,0 +1,127 @@
+unit Question1_U;
+     //Type your exam number here
+interface
+
+uses
+  Windows, Messages, SysUtils, Variants, Classes, Graphics, Controls, Forms,
+  Dialogs, StdCtrls, Buttons, ExtCtrls, ComCtrls;
+
+type
+  TfrmQuestion = class(TForm)
+    pgcQuestion1: TPageControl;
+    tsQ1_1: TTabSheet;
+    pnlButtons: TPanel;
+    bmbClose: TBitBtn;
+    tsQ1_3: TTabSheet;
+    tsQ1_2: TTabSheet;
+    lblMarketValue: TLabel;
+    lblSellingPrice: TLabel;
+    lblNumBedrooms: TLabel;
+    lblNumBathrooms: TLabel;
+    chkPool: TCheckBox;
+    btnSalesAdd: TButton;
+    edtMarket: TEdit;
+    edtSellingPrice: TEdit;
+    edtBeds: TEdit;
+    edtBaths: TEdit;
+    lblHeadingElecKiloW: TLabel;
+    lblPrevReading: TLabel;
+    lblCurrReading: TLabel;
+    lblElectricity: TLabel;
+    lblGeyserSizes: TLabel;
+    edtPrev: TEdit;
+    edtCurrent: TEdit;
+    edtSize: TEdit;
+    lblAreaRenovated: TLabel;
+    edtArea: TEdit;
+    lblSqMetre: TLabel;
+    redRenovate: TRichEdit;
+    btnCalcRenovation: TButton;
+    btnFindGeysers: TButton;
+    grpAreaRenovated: TGroupBox;
+    grpElectricityUsed: TGroupBox;
+    btnCalcAmount: TButton;
+    lblAmountDue: TLabel;
+    grpGeyserOptions: TGroupBox;
+    grpAdvertisement: TGroupBox;
+    redQ1: TRichEdit;
+    rbPaint: TRadioButton;
+    rbTiling: TRadioButton;
+    memGeysers: TMemo;
+    grpMethodRenovation: TGroupBox;
+    procedure btnSalesAddClick(Sender: TObject);
+    procedure btnCalcRenovationClick(Sender: TObject);
+    procedure FormCreate(Sender: TObject);
+    procedure btnCalcAmountClick(Sender: TObject);
+    procedure rbPaintClick(Sender: TObject);
+    procedure rbTilingClick(Sender: TObject);
+    procedure btnFindGeysersClick(Sender: TObject);
+    
+  private
+    { Private declarations }
+  public
+    { Public declarations }
+  end;
+
+var
+  frmQuestion: TfrmQuestion;
+  arrGeysers : array [1..20] of string = ('50-QuickSun50','100-QuickSun100','150-QuickSun150','50-Solar Magic','50-InHotWater',
+                                          '100-SunnyBath 100','150-SunnyBath 150','50-WaterJoy 50','100-WaterJoy 100',
+                                          '150-BigTub 150','50-Small Wonder','100-Medium Wonder','150-Large Wonder',
+                                          '100-SolarWarmth 100','150-SolarWarmth 150','50-Sun Magic','50-Eco Wonder 50',
+                                          '100-Eco Wonder 100','150-Eco Wonder 150','150-Big Earth Saver');
+
+implementation
+
+{$R *.dfm}
+{$R+}
+
+procedure TfrmQuestion.btnSalesAddClick(Sender: TObject);
+begin
+   // Question 1.1
+
+
+end;
+//=========================================================================
+procedure TfrmQuestion.rbPaintClick(Sender: TObject);
+begin
+    // Question 1.2.1
+
+end;
+//=========================================================================
+procedure TfrmQuestion.rbTilingClick(Sender: TObject);
+begin
+    // Question 1.2.2
+
+end;
+//=========================================================================
+procedure TfrmQuestion.btnCalcRenovationClick(Sender: TObject);
+
+begin
+   // Question 1.2.3
+
+end;
+//=========================================================================
+procedure TfrmQuestion.btnCalcAmountClick(Sender: TObject);
+
+begin
+  // Question 1.3.1
+
+
+end;
+//=========================================================================
+procedure TfrmQuestion.btnFindGeysersClick(Sender: TObject);
+
+begin
+  // Question 1.3.2
+
+
+end;
+//=========================================================================
+procedure TfrmQuestion.FormCreate(Sender: TObject);
+begin
+      CurrencyString := 'R ';
+      pgcQuestion1.ActivePageIndex := 0;
+end;
+
+end.

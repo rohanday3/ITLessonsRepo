@@ -1,0 +1,63 @@
+object Form5: TForm5
+  Left = 0
+  Top = 0
+  Caption = 'Form5'
+  ClientHeight = 368
+  ClientWidth = 610
+  Color = clBtnFace
+  Font.Charset = DEFAULT_CHARSET
+  Font.Color = clWindowText
+  Font.Height = -11
+  Font.Name = 'Tahoma'
+  Font.Style = []
+  OldCreateOrder = False
+  PixelsPerInch = 96
+  TextHeight = 13
+  object Panel1: TPanel
+    Left = 16
+    Top = 8
+    Width = 586
+    Height = 321
+    TabOrder = 0
+    object btnDisplayRichEdit: TButton
+      Left = 32
+      Top = 16
+      Width = 114
+      Height = 25
+      Caption = 'Display in a rich edit'
+      TabOrder = 0
+      OnClick = btnDisplayRichEditClick
+    end
+    object btnDisplayStringGrid: TButton
+      Left = 152
+      Top = 16
+      Width = 129
+      Height = 25
+      Caption = 'Display in a string grid'
+      TabOrder = 1
+      OnClick = btnDisplayStringGridClick
+    end
+    object redOutput: TRichEdit
+      Left = 24
+      Top = 64
+      Width = 257
+      Height = 113
+      Font.Charset = ANSI_CHARSET
+      Font.Color = clWindowText
+      Font.Height = -11
+      Font.Name = 'Tahoma'
+      Font.Style = []
+      Lines.Strings = (
+        '')
+      ParentFont = False
+      TabOrder = 2
+    end
+    object sgdOutput: TStringGrid
+      Left = 24
+      Top = 192
+      Width = 320
+      Height = 120
+      TabOrder = 3
+    end
+  end
+end

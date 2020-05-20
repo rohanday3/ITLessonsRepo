@@ -1,0 +1,28 @@
+unit Mealtime_U;
+
+interface
+uses Sysutils, Math, Messages, Dialogs;
+Type
+TMealtime = class(TObject)
+private
+  { private declarations }
+  fName:string;
+  fCountHealthyFood,fCountUnhealthyFood:integer;
+
+public
+  { public declarations }
+    Constructor Create(sname:string);
+    Procedure countHealthy;
+    Procedure countUnhealthy;
+    Function getName:string;
+    Function calculatePoints:integer;
+    Function calculateNumFoodsEaten:integer;
+    Function determineHealthStatus: string;
+    Function percentageHealthyFood: real;
+    Function toString:string;
+
+end;
+
+implementation
+
+end.

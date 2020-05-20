@@ -1,0 +1,14 @@
+program SchoolDB_P;
+
+uses
+  Forms,
+  SchoolDB_U in 'SchoolDB_U.pas' {frmSchoolDB};
+
+{$R *.res}
+
+begin
+  Application.Initialize;
+  Application.MainFormOnTaskbar := True;
+  Application.CreateForm(TfrmSchoolDB, frmSchoolDB);
+  Application.Run;
+end.
